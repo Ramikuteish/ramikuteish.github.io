@@ -1,17 +1,22 @@
-// Popup Skript
+/* jshint esversion: 6 */
 
+// Zurück-Button Funktion
+function backFunction() {
+     window.location.href = "../index.html"; 
+}
+
+/*
+// Popup Skript
 // Popup öffnen
 function openPopup() {
     const popup = document.querySelector('.popup');
     popup.classList.add('show');
 }
-
 // Popup schließen
 function closePopup() {
     const popup = document.querySelector('.popup');
     popup.classList.remove('show');
 }
-
 // Popup schließen wenn außerhalb geklickt wird
 document.addEventListener('click', function (event) {
     const popup = document.querySelector('.popup');
@@ -19,28 +24,28 @@ document.addEventListener('click', function (event) {
         closePopup();
     }
 });
-
+*/
 
 // Hamburger Menü
-const hamburger = document.querySelector(".hamburger")
-const navbar = document.querySelector(".navbar")
+const hamburger = document.querySelector(".hamburger");
+const navbar = document.querySelector(".navbar");
 
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     navbar.classList.toggle("active");
-})
+});
 
 function hidesidebar() {
-    const sidebar = document.querySelector(".sidebar")
-    sidebar.style.display = 'none'
+    const sidebar = document.querySelector(".sidebar");
+    sidebar.style.display = 'none';
 }
 
 document.querySelectorAll(".navbar").forEach(n => {
     n.addEventListener("click", () => {
         hamburger.classList.remove("active");
         navbar.classList.remove("active");
-    })
-})
+    });
+});
 
 /*
 // Formular
@@ -269,10 +274,10 @@ function initGallery() {
     // Alle Galerie-Container initialisieren mit den richtigen Arrays
     currentImages = images;
     loadGalleryToContainer(galleryContainerMonitor);
-    
+
     currentImages = imagestablet;
     loadGalleryToContainer(galleryContainerTablet);
-    
+
     currentImages = imagesmobile;
     loadGalleryToContainer(galleryContainerPhone);
 
@@ -284,7 +289,7 @@ function initGallery() {
 
     // Standardmäßig erstes Bild auswählen und anzeigen
     selectImage(currentImageId);
-    
+
     // Markiere als initialisiert - scrollIntoView wird ab jetzt verwendet
     isInitialized = true;
 }

@@ -200,7 +200,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 3rem 0;
+  padding: 2rem 0;
   background: var(--dritte_hintergrund);
   backdrop-filter: blur(10px);
   z-index: 1000;
@@ -220,9 +220,10 @@ header .container {
 }
 
 .logo img {
-  height: 2.5rem;
+  height: 5rem;
   width: auto;
   display: block;
+  filter: brightness(0) invert(1);
 }
 
 .logo:hover {
@@ -251,8 +252,8 @@ header .container {
 
 .bar {
   display: block;
-  width: 25px;
-  height: 3px;
+  width: 45px;
+  height: 5px;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -426,6 +427,23 @@ span {
   color: var(--dim_gray);
 }
 
+.home .home_img {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+}
+
+.home_img div {
+  background: url(../img/IMG_3363.jpeg) no-repeat;
+  background-position: center top;
+  background-size: cover;
+  width: 35vw;
+  height: 55vh;
+  border-radius: 10% 25%;
+  box-shadow: 0 0 25px var(--main);
+  transition: 0.4s ease-in-out;
+}
+
 .btn_group {
   display: flex;
   gap: 1.5rem;
@@ -438,6 +456,7 @@ span {
   border-radius: 3rem;
   color: var(--text);
   border: 2px solid transparent;
+  font-size: 1rem;
   font-weight: 600;
   transition: 0.3s ease-in-out;
   width: 250px;
@@ -457,23 +476,6 @@ span {
   background: var(--main);
 }
 
-.home .home_img {
-  flex: 1;
-  display: flex;
-  justify-content: end;
-}
-
-.home_img div {
-  background: url(../img/IMG_3363.jpeg) no-repeat;
-  background-position: center top;
-  background-size: cover;
-  width: 35vw;
-  height: 55vh;
-  border-radius: 10% 25%;
-  box-shadow: 0 0 25px var(--main);
-  transition: 0.4s ease-in-out;
-}
-
 
 /*############################################################################*/
 /* Section Kompetenzen Angaben */
@@ -485,7 +487,7 @@ section.kompetenzen {
 .kompetenzen_container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .heading {
@@ -495,6 +497,7 @@ section.kompetenzen {
 }
 
 .kompetenzen_box {
+  min-width: 330px;
   display: flex;
   justify-content: center;
   align-items: baseline;
@@ -547,20 +550,24 @@ section.uebermich .container {
   gap: 5rem;
 }
 
-section.uebermich .container article:nth-of-type(1) {
+section.uebermich .container article:nth-of-type(1),
+section.uebermich .container article:nth-of-type(2) {
   display: flex;
-  gap: 5rem;
-  align-items: center;
+  flex: 1;
+  gap: 2rem;
+}
+
+.uebermich_img {
+  width: 50%;
 }
 
 .uebermich_img div {
   background: url(../img/IMG_5762.jpeg) center right no-repeat;
-  width: 32vw;
+  width: 100%;
   border-radius: 10% 25%;
   box-shadow: 0 0 25px var(--main);
   transition: 0.4s ease-in-out;
   background-size: cover;
-  width: 25vw;
   height: 45vh;
 }
 
@@ -568,15 +575,7 @@ section.uebermich .container article:nth-of-type(1) {
   display: flex;
   flex-direction: column;
   align-self: flex-start;
-}
-
-.uebermich_content p {
-  padding-right: 8rem;
-}
-
-section.uebermich .container article:nth-of-type(2) {
-  display: flex;
-  gap: 5rem;
+  width: 50%;
 }
 
 section.uebermich .container article:nth-of-type(2) div {
@@ -590,6 +589,7 @@ section.uebermich .container article:nth-of-type(2) div {
   cursor: pointer;
   border: 5px solid transparent;
   transition: 0.4s ease-in-out;
+  min-width: 330px;
 }
 
 section.uebermich .container article:nth-of-type(2) div:hover {
@@ -1196,15 +1196,36 @@ footer .Copyright {
 
 
 /*############################################################################*/
+/* Impressum & Datenschutz Seiten */
+/*############################################################################*/
+.impressum_main,
+.datenschutz_main {
+  padding: 10rem 0;
+}
+
+.impressum_main h2,
+.datenschutz_main h2 {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.impres_site header button,
+.daten_site header button {
+  cursor: pointer;
+  padding: 1rem;
+  width: 200px;
+}
+
+/*############################################################################*/
 /* Responsive Design - Tablet */
 /*############################################################################*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .container {
-    padding: 0 1rem;
+    padding: 0 2rem;
   }
 
   h1 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
 
   h2 {
@@ -1229,15 +1250,19 @@ footer .Copyright {
 
   /* Header */
   header {
-    padding: 1.5rem 2rem;
+    padding: 2rem;
   }
 
   header .container {
     max-height: 10vh;
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+  
   }
 
-  .logo {
-    font-size: calc(2rem - 0.5rem);
+  .logo img {
+  height: 4rem;
   }
 
   /*
@@ -1281,6 +1306,7 @@ footer .Copyright {
 
   .hamburger {
     display: block;
+  
   }
 
   .hamburger.active .bar:nth-child(1) {
@@ -1314,6 +1340,10 @@ footer .Copyright {
   }
 
   /* Home Section */
+  .home .container {
+    gap: 1.5rem;
+  }
+
   .home_content p {
     padding-left: 0;
     font-size: 0.9rem;
@@ -1330,11 +1360,15 @@ footer .Copyright {
   }
 
   .btn {
-    padding: 0.5rem 1.5rem;
     font-size: 1.2rem;
-    border: 2px solid transparent;
-    font-weight: 600;
-    transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home_content,
+  .home_img {
+    width: 50%;
   }
 
   .home_img div {
@@ -1364,10 +1398,6 @@ footer .Copyright {
     padding: 2rem;
   }
 
-  .kompetenzen_info h4 {
-    margin: 1rem 0;
-  }
-
   .kompetenzen_info p {
     font-size: 0.9rem;
   }
@@ -1379,20 +1409,16 @@ footer .Copyright {
 
   section.uebermich .container article:nth-of-type(1) {
     flex-direction: row;
+    gap: 2rem;
   }
 
   .uebermich_img div {
-    width: 30vw;
     height: 30vh;
   }
 
   .uebermich_content p {
     padding-right: 0;
     font-size: 0.9rem;
-  }
-
-  section.uebermich .container article:nth-of-type(2) {
-    flex-direction: column;
   }
 
   /* Projekte*/
@@ -1429,6 +1455,11 @@ footer .Copyright {
   }
 
   /* Kontakt */
+  section.kontakt .container article {
+    padding: 1rem;
+    min-width: 30%;
+  }
+
   section.kontakt .container article a {
     font-size: 1rem;
   }
@@ -1452,6 +1483,7 @@ footer .Copyright {
 
   footer ul {
     justify-content: space-evenly;
+    padding: 0;
     gap: 0;
   }
 
@@ -1462,11 +1494,6 @@ footer .Copyright {
   .rechts {
     justify-content: center;
   }
-
-  .daten_site,
-  .impres_site {
-    padding: 0 2rem;
-  }
 }
 
 
@@ -1475,7 +1502,7 @@ footer .Copyright {
 /*############################################################################*/
 @media only screen and (max-width: 767px) {
   .container {
-    padding: 0 1rem;
+    padding: 0 2rem;
   }
 
   h1 {
@@ -1510,7 +1537,7 @@ footer .Copyright {
   }
 
   .logo img {
-    height: 1.5rem;
+    height: 3rem;
   }
 
   /*
@@ -1542,6 +1569,10 @@ footer .Copyright {
     padding: 1rem;
   }
 
+  .bar {
+  width: 35px;
+  height: 4px;
+  }
   .hamburger {
     display: block;
   }
@@ -1576,7 +1607,7 @@ footer .Copyright {
   }
 
   .home .container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 5rem;
   }
 
@@ -1592,8 +1623,8 @@ footer .Copyright {
   }
 
   .home_img div {
-    width: 70vw;
-    height: 30vh;
+    min-width: 70vw;
+    height: 40vh;
   }
 
   .btn_group {
@@ -1617,6 +1648,7 @@ footer .Copyright {
 
   .kompetenzen_box {
     min-height: 300px;
+    display: block;
   }
 
   .kompetenzen_info {
@@ -1637,9 +1669,13 @@ footer .Copyright {
     text-align: start;
   }
 
+  .uebermich_img,
+  .uebermich_content {
+    width: 100%;
+  }
+
   .uebermich_img div {
-    width: 70vw;
-    height: 30vh;
+    height: 40vh;
   }
 
   .uebermich_content p {
@@ -1647,6 +1683,10 @@ footer .Copyright {
   }
 
   /* Projekte */
+  #projekte p {
+    padding: 0 2rem;
+  }
+
   .monitor-container,
   .tablet-container {
     display: none;
@@ -1700,11 +1740,13 @@ footer .Copyright {
   .kontakt .container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
   }
 
   section.kontakt .container article {
-    width: 100%;
+    width: 85%;
   }
 
   /* Footer */
@@ -1754,24 +1796,10 @@ footer .Copyright {
     font-size: 1rem;
     width: 150px;
   }
-}
 
-
-/*############################################################################*/
-/* Impressum & Datenschutz Seiten */
-/*############################################################################*/
-.impressum_main,
-.datenschutz_main {
-  padding: 12rem 0;
-}
-
-.impressum_main h2,
-.datenschutz_main h2 {
-  margin-top: 4rem;
-  margin-bottom: 1rem;
-}
-
-.impres_site header button,
-.daten_site header button {
-  cursor: pointer;
+  .impressum_main h1,
+  .datenschutz_main h1 {
+    padding-right: 1rem;
+    font-size: 1.85rem;
+  }
 }
