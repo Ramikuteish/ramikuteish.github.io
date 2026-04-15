@@ -1648,6 +1648,7 @@ footer .Copyright {
 
   .kompetenzen_box {
     min-height: 300px;
+      min-width: auto;
     display: block;
   }
 
