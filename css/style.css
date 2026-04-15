@@ -1683,6 +1683,10 @@ footer .Copyright {
     font-size: 0.85rem;
   }
 
+   section.uebermich .container article:nth-of-type(2) div {
+  min-width: auto;
+ }
+
   /* Projekte */
   #projekte p {
     padding: 0 2rem;
