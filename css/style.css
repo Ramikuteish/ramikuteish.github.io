@@ -1258,11 +1258,11 @@ footer .Copyright {
     display: flex;
     justify-content: baseline;
     align-items: baseline;
-  
+
   }
 
   .logo img {
-  height: 4rem;
+    height: 4rem;
   }
 
   /*
@@ -1277,7 +1277,7 @@ footer .Copyright {
   .navbar {
     position: fixed;
     left: -100%;
-    top: 80px;
+    top: 0;
     flex-direction: column;
     background: var(--zweite_hintergrund);
     width: 100%;
@@ -1306,19 +1306,18 @@ footer .Copyright {
 
   .hamburger {
     display: block;
-  
-  }
-
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
   }
 
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
 
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(10.4px) rotate(45deg);
+  }
+
   .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-9.6px) rotate(-45deg);
   }
 
   /*
@@ -1391,7 +1390,8 @@ footer .Copyright {
 
   .kompetenzen_box {
     height: 400px;
-    max-width: 340px;
+    max-width: 334px;
+    padding: 0;
   }
 
   .kompetenzen_info {
@@ -1455,9 +1455,15 @@ footer .Copyright {
   }
 
   /* Kontakt */
+    section.kontakt .container {
+      gap: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
   section.kontakt .container article {
-    padding: 1rem;
-    min-width: 30%;
+    padding: 2rem;
+    width: auto;
   }
 
   section.kontakt .container article a {
@@ -1544,7 +1550,7 @@ footer .Copyright {
   .gradient_btn {
     font-size: 1rem;
   }
-*/
+ */
 
   .navbar {
     position: fixed;
@@ -1570,9 +1576,10 @@ footer .Copyright {
   }
 
   .bar {
-  width: 35px;
-  height: 4px;
+    width: 35px;
+    height: 4px;
   }
+
   .hamburger {
     display: block;
   }
@@ -1648,7 +1655,7 @@ footer .Copyright {
 
   .kompetenzen_box {
     min-height: 300px;
-      min-width: auto;
+    min-width: auto;
     display: block;
   }
 
@@ -1670,6 +1677,10 @@ footer .Copyright {
     text-align: start;
   }
 
+ section.uebermich .container article:nth-of-type(2) div {
+  min-width: auto;
+ }
+
   .uebermich_img,
   .uebermich_content {
     width: 100%;
@@ -1677,15 +1688,12 @@ footer .Copyright {
 
   .uebermich_img div {
     height: 40vh;
+    width: auto;
   }
 
   .uebermich_content p {
     font-size: 0.85rem;
   }
-
-   section.uebermich .container article:nth-of-type(2) div {
-  min-width: auto;
- }
 
   /* Projekte */
   #projekte p {
