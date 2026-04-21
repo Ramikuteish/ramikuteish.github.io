@@ -2,29 +2,9 @@
 
 // Zurück-Button Funktion
 function backFunction() {
-     window.location.href = "../index.html"; 
+    window.location.href = "../index.html";
 }
 
-/*
-// Popup Skript
-// Popup öffnen
-function openPopup() {
-    const popup = document.querySelector('.popup');
-    popup.classList.add('show');
-}
-// Popup schließen
-function closePopup() {
-    const popup = document.querySelector('.popup');
-    popup.classList.remove('show');
-}
-// Popup schließen wenn außerhalb geklickt wird
-document.addEventListener('click', function (event) {
-    const popup = document.querySelector('.popup');
-    if (event.target === popup) {
-        closePopup();
-    }
-});
-*/
 
 // Hamburger Menü
 const hamburger = document.querySelector(".hamburger");
@@ -47,26 +27,6 @@ document.querySelectorAll(".navbar").forEach(n => {
     });
 });
 
-/*
-// Formular
-document.getElementById("nachricht").addEventListener("submit", function (event) {
-    let name = document.getElementById("name").value.trim();
-    let email = document.getElementById("email").value.trim();
-    let telefon = document.getElementById("telefon").value;
-    let betref = document.getElementById("betref").value;
-    let message = document.getElementById("message").value;
-    let ergebnis = document.getElementById("ergebnis");
-
-    if (name === "" || email === "" || telefon === "" || betref === "" || message === "") {
-        event.preventDefault();
-        ergebnis.textContent = 'Bitte fülle alle Pflichtfelder aus.';
-        ergebnis.style.color = "red";
-    } else {
-        ergebnis.textContent = `Danke ${name}, Deine Nachricht wird versendet...`;
-        ergebnis.style.color = "green";
-    }
-});
-*/
 
 // Slide Projekte
 document.addEventListener('DOMContentLoaded', function () {
@@ -96,38 +56,66 @@ const images = [
     {
         id: 1,
         url: './img/WeProtect\ Berlin.jpg',
-        title: 'Berglandschaft',
-        description: 'Majestätische Bergkette bei goldenem Sonnenuntergang.'
+        title: 'Berolina Security – Unternehmenswebsite',
+        description: `- <b>Projekt:</b> Erstellung und Pflege einer Unternehmenswebsite im Sicherheitsbereich.
+- <b>Meine Aufgabe:</b> Umsetzung der Website mit CMS (Sitejet), Strukturierung von Inhalten und Layout.
+- <b>Umsetzung:</b> Gestaltung der Seitenstruktur, Integration von Texten und Bildern sowie Optimierung für mobile Endgeräte.
+- <b>Fokus:</b> Responsive Design, klare Navigation und benutzerfreundliche Darstellung.
+- <b>Ergebnis:</b> Moderne, übersichtliche Website zur Präsentation der Dienstleistungen.`
     },
     {
         id: 2,
         url: './img/Tobias\ Stritt\ -\ Planung\ Montage\ Küchen.jpg',
-        title: 'Wald im Nebel',
-        description: 'Geheimnisvoller Waldnebel am frühen Morgen.'
+        title: 'Website „Tobias Stritt“ (Projekt in Entwicklung)',
+        description: `- <b>Projekt:</b> Konzeption und Gestaltung einer individuellen Website.
+- <b>Meine Aufgabe:</b> Design und Umsetzung mit CMS (Sitejet).
+- <b>Umsetzung:</b> Entwicklung von Layout, Struktur und visueller Gestaltung.
+- <b>Fokus:</b> Klare Benutzerführung und modernes Webdesign.
+- <b>Status:</b> Projekt aktuell in Entwicklung (Preview verfügbar).`
     },
     {
         id: 3,
         url: './img/Der\ NASCH\ e.V.jpg',
-        title: 'Meeresküste',
-        description: 'Gewaltige Wellen brechen an der felsigen Küste.'
+        title: 'Website für „Der NASCH e.V.“ (IHK-Abschlussprojekt)',
+        description: `- <b>Projekt:</b> Gestaltung und Umsetzung einer Website für einen Verein.
+- <b>Meine Aufgabe:</b> Entwicklung der Website von Konzept bis Umsetzung.
+- <b>Umsetzung:</b> Realisierung mit HTML, CSS und JavaScript.
+- <b>Fokus:</b> Benutzerfreundlichkeit, klare Struktur und visuelle Gestaltung.
+- <b>Ergebnis:</b> Funktionale Website zur Darstellung der Vereinsinhalte.
+- <b>Status:</b> Projekt aktuell als Referenz verfügbar.`
     },
     {
         id: 4,
         url: './img/waldtriathlon in Trainingen.jpg',
-        title: 'Bergsee',
-        description: 'Klarer Bergsee mit perfekter Spiegelung der Berge.'
+        title: 'Waldtriathlon – Event Website (Trainingsprojekt)',
+        description: `- <b>Projekt:</b> Gestaltung und Umsetzung einer Event-Website für eine Sportveranstaltung.
+- <b>Meine Aufgabe:</b> Konzeption, Design und technische Umsetzung der Website.
+- <b>Umsetzung:</b> Entwicklung der Seitenstruktur, Einbindung von Bildern sowie Gestaltung der Benutzeroberfläche.
+- <b>Fokus:</b> Übersichtliche Darstellung von Informationen (Event, Zeitplan, Anmeldung) und responsive Design.
+- <b>Ergebnis:</b> Funktionale Website zur Präsentation eines Sportevents mit klarer Navigation und ansprechendem Layout.
+- <b>Technologien:</b> HTML, CSS.`
     },
     {
         id: 5,
         url: './img/flyer/Moderne\ und\ dezente\ Outfits1.JPG',
-        title: 'Waldweg',
-        description: 'Verschlungener Pfad durch den dichten Nadelwald.'
+        title: 'Werbeflyer „Moderne und dezente Outfits“ (Trainingsprojekt)',
+        description: `- <b>Projekt:</b> Gestaltung eines mehrseitigen Werbeflyers im Bereich Mode.
+- <b>Meine Aufgabe:</b> Layout, Bildauswahl und typografische Gestaltung.
+- <b>Umsetzung:</b> Entwicklung eines klaren und modernen Designs mit Fokus auf visuelle Hierarchie.
+- <b>Fokus:</b> Kombination von Bild und Text, strukturierte Informationsdarstellung und ansprechende Gestaltung.
+- <b>Ergebnis:</b> Printprodukt zur Präsentation von Modeinhalten und Kontaktdaten.
+- <b>Tools:</b> Adobe InDesign, Photoshop.`
     },
     {
         id: 6,
         url: './img/flyer/Moderne\ und\ dezente\ Outfits2.JPG',
-        title: 'Nebelberge',
-        description: 'Berggipfel ragen aus einem Meer aus Nebel heraus.'
+        title: 'Werbeflyer „Moderne und dezente Outfits“ (Trainingsprojekt)',
+        description: `- <b>Projekt:</b> Gestaltung eines mehrseitigen Werbeflyers im Bereich Mode.
+- <b>Meine Aufgabe:</b> Layout, Bildauswahl und typografische Gestaltung.
+- <b>Umsetzung:</b> Entwicklung eines klaren und modernen Designs mit Fokus auf visuelle Hierarchie.
+- <b>Fokus:</b> Kombination von Bild und Text, strukturierte Informationsdarstellung und ansprechende Gestaltung.
+- <b>Ergebnis:</b> Printprodukt zur Präsentation von Modeinhalten und Kontaktdaten.
+- <b>Tools:</b> Adobe InDesign, Photoshop.`
     }
 ];
 
@@ -135,26 +123,44 @@ const imagestablet = [
     {
         id: 1,
         url: './img/WeProtect Berlin-Tablet.jpg',
-        title: 'Berglandschaft',
-        description: 'Majestätische Bergkette bei goldenem Sonnenuntergang.'
+        title: 'Berolina Security – Unternehmenswebsite',
+        description: `- <b>Projekt:</b> Erstellung und Pflege einer Unternehmenswebsite im Sicherheitsbereich.
+- <b>Meine Aufgabe:</b> Umsetzung der Website mit CMS (Sitejet), Strukturierung von Inhalten und Layout.
+- <b>Umsetzung:</b> Gestaltung der Seitenstruktur, Integration von Texten und Bildern sowie Optimierung für mobile Endgeräte.
+- <b>Fokus:</b> Responsive Design, klare Navigation und benutzerfreundliche Darstellung.
+- <b>Ergebnis:</b> Moderne, übersichtliche Website zur Präsentation der Dienstleistungen.`
     },
     {
         id: 2,
         url: './img/Tobias Stritt - Planung Montage Küchen-Tablet.jpg',
-        title: 'Wald im Nebel',
-        description: 'Geheimnisvoller Waldnebel am frühen Morgen.'
+        title: 'Website „Tobias Stritt“ (Projekt in Entwicklung)',
+        description: `- <b>Projekt:</b> Konzeption und Gestaltung einer individuellen Website.
+- <b>Meine Aufgabe:</b> Design und Umsetzung mit CMS (Sitejet).
+- <b>Umsetzung:</b> Entwicklung von Layout, Struktur und visueller Gestaltung.
+- <b>Fokus:</b> Klare Benutzerführung und modernes Webdesign.
+- <b>Status:</b> Projekt aktuell in Entwicklung (Preview verfügbar).`
     },
     {
         id: 3,
         url: './img/Der NASCH e.V-Tablet.jpg',
-        title: 'Meeresküste',
-        description: 'Gewaltige Wellen brechen an der felsigen Küste.'
+        title: 'Website für „Der NASCH e.V.“ (IHK-Abschlussprojekt)',
+        description: `- <b>Projekt:</b> Gestaltung und Umsetzung einer Website für einen Verein.
+- <b>Meine Aufgabe:</b> Entwicklung der Website von Konzept bis Umsetzung.
+- <b>Umsetzung:</b> Realisierung mit HTML, CSS und JavaScript.
+- <b>Fokus:</b> Benutzerfreundlichkeit, klare Struktur und visuelle Gestaltung.
+- <b>Ergebnis:</b> Funktionale Website zur Darstellung der Vereinsinhalte.
+- <b>Status:</b> Projekt aktuell als Referenz verfügbar.`
     },
     {
         id: 4,
         url: './img/waldtriathlon in Trainingen-Tablet.jpg',
-        title: 'Bergsee',
-        description: 'Klarer Bergsee mit perfekter Spiegelung der Berge.'
+        title: 'Waldtriathlon – Event Website (Trainingsprojekt)',
+        description: `- <b>Projekt:</b> Gestaltung und Umsetzung einer Event-Website für eine Sportveranstaltung.
+- <b>Meine Aufgabe:</b> Konzeption, Design und technische Umsetzung der Website.
+- <b>Umsetzung:</b> Entwicklung der Seitenstruktur, Einbindung von Bildern sowie Gestaltung der Benutzeroberfläche.
+- <b>Fokus:</b> Übersichtliche Darstellung von Informationen (Event, Zeitplan, Anmeldung) und responsive Design.
+- <b>Ergebnis:</b> Funktionale Website zur Präsentation eines Sportevents mit klarer Navigation und ansprechendem Layout.
+- <b>Technologien:</b> HTML, CSS.`
     }
 ];
 
@@ -162,26 +168,44 @@ const imagesmobile = [
     {
         id: 1,
         url: './img/WeProtect Berlin-Mobile.jpg',
-        title: 'Berglandschaft',
-        description: 'Majestätische Bergkette bei goldenem Sonnenuntergang.'
+        title: 'Berolina Security – Unternehmenswebsite',
+        description: `- <b>Projekt:</b> Erstellung und Pflege einer Unternehmenswebsite im Sicherheitsbereich.
+- <b>Meine Aufgabe:</b> Umsetzung der Website mit CMS (Sitejet), Strukturierung von Inhalten und Layout.
+- <b>Umsetzung:</b> Gestaltung der Seitenstruktur, Integration von Texten und Bildern sowie Optimierung für mobile Endgeräte.
+- <b>Fokus:</b> Responsive Design, klare Navigation und benutzerfreundliche Darstellung.
+- <b>Ergebnis:</b> Moderne, übersichtliche Website zur Präsentation der Dienstleistungen.`
     },
     {
         id: 2,
         url: './img/Tobias Stritt - Planung Montage Küchen-Mobile.jpg',
-        title: 'Wald im Nebel',
-        description: 'Geheimnisvoller Waldnebel am frühen Morgen.'
+        title: 'Website „Tobias Stritt“ (Projekt in Entwicklung)',
+        description: `- <b>Projekt:</b> Konzeption und Gestaltung einer individuellen Website.
+- <b>Meine Aufgabe:</b> Design und Umsetzung mit CMS (Sitejet).
+- <b>Umsetzung:</b> Entwicklung von Layout, Struktur und visueller Gestaltung.
+- <b>Fokus:</b> Klare Benutzerführung und modernes Webdesign.
+- <b>Status:</b> Projekt aktuell in Entwicklung (Preview verfügbar).`
     },
     {
         id: 3,
         url: './img/Der NASCH e.V-Mobile.jpg',
-        title: 'Meeresküste',
-        description: 'Gewaltige Wellen brechen an der felsigen Küste.'
+        title: 'Website für „Der NASCH e.V.“ (IHK-Abschlussprojekt)',
+        description: `- <b>Projekt:</b> Gestaltung und Umsetzung einer Website für einen Verein.
+- <b>Meine Aufgabe:</b> Entwicklung der Website von Konzept bis Umsetzung.
+- <b>Umsetzung:</b> Realisierung mit HTML, CSS und JavaScript.
+- <b>Fokus:</b> Benutzerfreundlichkeit, klare Struktur und visuelle Gestaltung.
+- <b>Ergebnis:</b> Funktionale Website zur Darstellung der Vereinsinhalte.
+- <b>Status:</b> Projekt aktuell als Referenz verfügbar.`
     },
     {
         id: 4,
         url: './img/waldtriathlon in Trainingen-Mobile.jpg',
-        title: 'Bergsee',
-        description: 'Klarer Bergsee mit perfekter Spiegelung der Berge.'
+        title: 'Waldtriathlon – Event Website (Trainingsprojekt)',
+        description: `- <b>Projekt:</b> Gestaltung und Umsetzung einer Event-Website für eine Sportveranstaltung.
+- <b>Meine Aufgabe:</b> Konzeption, Design und technische Umsetzung der Website.
+- <b>Umsetzung:</b> Entwicklung der Seitenstruktur, Einbindung von Bildern sowie Gestaltung der Benutzeroberfläche.
+- <b>Fokus:</b> Übersichtliche Darstellung von Informationen (Event, Zeitplan, Anmeldung) und responsive Design.
+- <b>Ergebnis:</b> Funktionale Website zur Präsentation eines Sportevents mit klarer Navigation und ansprechendem Layout.
+- <b>Technologien:</b> HTML, CSS.`
     }
 ];
 
@@ -244,6 +268,9 @@ function detectDevice() {
     if (currentGalleryContainer.children.length === 0) {
         loadGalleryToContainer(currentGalleryContainer);
     }
+
+    const currentImage = currentImages.find(img => img.id === currentImageId);
+    showProjectInfo(currentImage);
 }
 
 // Galerie in einen Container laden
@@ -322,9 +349,23 @@ function selectImage(id) {
 
     // Bild in der Vorschau anzeigen
     const selectedImage = currentImages.find(img => img.id === id);
-    if (selectedImage) {
-    }
+    showProjectInfo(selectedImage);
     updateStatus();
+}
+
+function showProjectInfo(image) {
+    const titleEl = document.getElementById('projectTitle');
+    const descEl = document.getElementById('projectDescription');
+
+    if (!titleEl || !descEl) return;
+
+    if (image) {
+        titleEl.textContent = image.title;
+        descEl.innerHTML = image.description.replace(/\n/g, '<br>');
+    } else {
+        titleEl.textContent = 'Wähle ein Projektbild';
+        descEl.textContent = 'Klicke auf ein Bild, um hier die Projektdaten anzuzeigen.';
+    }
 }
 
 // Status aktualisieren
