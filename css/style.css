@@ -1,32 +1,25 @@
 @charset "UTF-8";
 
 /*############################################################################*/
-/* inter-100 - latin */
+/* inter - Font */
 @font-face {
   font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Inter';
   font-style: normal;
   font-weight: 100;
   src: url('../font/inter-v20-latin-100.woff2') format('woff2');
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* inter-200 - latin */
 @font-face {
   font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Inter';
   font-style: normal;
   font-weight: 200;
   src: url('../font/inter-v20-latin-200.woff2') format('woff2');
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* inter-300 - latin */
 @font-face {
   font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Inter';
   font-style: normal;
   font-weight: 300;
@@ -34,70 +27,70 @@
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* inter-regular - latin */
 @font-face {
   font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   src: url('../font/inter-v20-latin-regular.woff2') format('woff2');
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* inter-500 - latin */
 @font-face {
   font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   src: url('../font/inter-v20-latin-500.woff2') format('woff2');
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* inter-600 - latin */
 @font-face {
   font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
   src: url('../font/inter-v20-latin-600.woff2') format('woff2');
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* inter-700 - latin */
 @font-face {
   font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   src: url('../font/inter-v20-latin-700.woff2') format('woff2');
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* inter-800 - latin */
 @font-face {
   font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Inter';
   font-style: normal;
   font-weight: 800;
   src: url('../font/inter-v20-latin-800.woff2') format('woff2');
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* inter-900 - latin */
 @font-face {
   font-display: swap;
-  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Inter';
   font-style: normal;
   font-weight: 900;
   src: url('../font/inter-v20-latin-900.woff2') format('woff2');
-  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/*############################################################################*/
+/* Farben */
+/*############################################################################*/
+:root {
+  --hintergrund: rgb(25, 25, 25, 1.0);
+  --zweite_hintergrund: rgba(16, 16, 16, 1.0);
+  --dritte_hintergrund: rgba(0, 0, 0, 0.3);
+  --text: rgba(229, 229, 229, 1.0);
+  --main: rgba(51, 51, 51, 1.0);
+  --dark_slate_gray: rgba(76, 76, 76, 1.0);
+  --dim_gray: rgba(102, 102, 102, 1.0);
+  --medium_gray: rgba(127, 127, 127, 1.0);
+  --silver_gray: rgba(153, 153, 153, 1.0);
+  --light_silver: rgba(178, 178, 178, 1.0);
+  --light_gray: rgba(204, 204, 204, 1.0);
 }
 
 
@@ -136,29 +129,35 @@ video {
 h1 {
   margin: 0;
   font-size: 3rem;
-  font-weight: 800;
+  font-weight: 900;
   line-height: 1;
   color: var(--dim_gray);
 }
 
 h2 {
-  font-size: 2.3rem;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 5rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 h5 {
   font-size: 1.3rem;
+  font-weight: 500;
 }
 
 h6 {
   font-size: 1.15rem;
+  font-weight: 400;
 }
 
 p {
@@ -174,23 +173,6 @@ a {
   color: var(--text);
 }
 
-
-/*############################################################################*/
-/* Farben */
-/*############################################################################*/
-:root {
-  --hintergrund: rgb(25, 25, 25, 1.0);
-  --zweite_hintergrund: rgba(16, 16, 16, 1.0);
-  --dritte_hintergrund: rgba(0, 0, 0, 0.3);
-  --text: rgba(229, 229, 229, 1.0);
-  --main: rgba(51, 51, 51, 1.0);
-  --dark_slate_gray: rgba(76, 76, 76, 1.0);
-  --dim_gray: rgba(102, 102, 102, 1.0);
-  --medium_gray: rgba(127, 127, 127, 1.0);
-  --silver_gray: rgba(153, 153, 153, 1.0);
-  --light_silver: rgba(178, 178, 178, 1.0);
-  --light_gray: rgba(204, 204, 204, 1.0);
-}
 
 /*############################################################################*/
 /* Header Angaben */
@@ -220,7 +202,7 @@ header .container {
 }
 
 .logo img {
-  height: 5rem;
+  height: 3rem;
   width: auto;
   display: block;
   filter: brightness(0) invert(1);
@@ -234,10 +216,9 @@ header .container {
   display: inline-block;
   font-size: calc(1.3rem - 0.1vw);
   font-weight: 500;
-  margin-left: 2rem;
+  margin: 1rem 0 0 2rem;
   transition: 0.3s ease-in-out;
   border-bottom: 3px solid transparent;
-  margin-top: 1rem;
 }
 
 .navbar a:hover {
@@ -260,134 +241,6 @@ header .container {
   background: var(--light_gray);
 }
 
-/*
-.gradient_btn {
-  font-size: calc(1.3rem - 0.1vw);
-  font-weight: 500;
-  padding: 1rem 2rem;
-  border-radius: 3rem;
-  background: linear-gradient(270deg,
-      rgba(51, 51, 51, 1.0) 10%,
-      rgba(51, 51, 51, 1.0) 100%);
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-  color: var(--text);
-  border: none;
-  text-wrap: nowrap;
-}
-
-.gradient_btn:hover {
-  transform: scale(1.05);
-}
-.gradient_btn_resposive {
-  display: none;
-}
-*/
-
-
-/*############################################################################*/
-/* Popup Angaben */
-/*############################################################################*/
-/*
-.popup {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 2000;
-  justify-content: center;
-  align-items: center;
-}
-
-.popup.show {
-  display: flex;
-}
-
-.popup_content {
-  background: var(--zweite_hintergrund);
-  padding: 1rem;
-  border-radius: 2rem;
-  max-width: 600px;
-  width: 100%;
-  max-height: 90vh;
-  overflow-y: auto;
-  border: 2px solid var(--main);
-  position: relative;
-}
-
-.popup_close {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  color: var(--light_gray);
-  padding: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s ease-in-out;
-}
-
-.popup_close:hover {
-  color: var(--text);
-  transform: scale(1.2) rotate(90deg);
-}
-
-.popup_content h3 {
-  margin-bottom: 1rem;
-}
-
-.popup_content p {
-  margin-bottom: 1.5rem;
-}
-
-.popup_content form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-form .input_box input,
-form .input_group2 input,
-form textarea {
-  width: 100%;
-  padding: 1rem 2rem;
-  border-radius: 2rem;
-  border: none;
-  background: var(--dritte_hintergrund);
-  color: var(--text);
-  border-bottom: 1px solid var(--main);
-  margin-bottom: 2.5rem;
-  margin-top: 0.5rem;
-  resize: none;
-}
-
-form .input_box input:hover,
-form .input_group2 input:hover,
-form textarea:hover {
-  background: var(--dark_slate_gray);
-  color: var(--text);
-}
-
-form .input_group2 input:nth-of-type(2) {
-  width: 50%;
-  align-items: flex-end;
-  cursor: pointer;
-  border: 2px solid var(--main);
-}
-
-form .input_group2 button {
-  font-size: 1rem;
-}
-*/
-
 
 /*############################################################################*/
 /* Alle Sections */
@@ -395,6 +248,10 @@ form .input_group2 button {
 section {
   min-height: 100vh;
   padding: 6rem 0;
+}
+
+section h2 {
+  text-align: center;
 }
 
 
@@ -419,8 +276,9 @@ section.home {
   flex-direction: column;
 }
 
-.home_content h3 {
-  font-size: 1.5rem;
+.home_content h2 {
+  text-align: left;
+  margin-bottom: 0;
 }
 
 span {
@@ -434,10 +292,10 @@ span {
 }
 
 .home_img div {
-  background: url(../img/IMG_3363.jpeg) no-repeat;
+  background: url(../img/Foto\ -\ Rami\ Kuteish.jpg) no-repeat;
   background-position: center top;
   background-size: cover;
-  width: 35vw;
+  width: 100%;
   height: 55vh;
   border-radius: 10% 25%;
   box-shadow: 0 0 25px var(--main);
@@ -459,7 +317,7 @@ span {
   font-size: 1rem;
   font-weight: 600;
   transition: 0.3s ease-in-out;
-  width: 250px;
+  width: 255px;
   text-align: center;
 }
 
@@ -490,22 +348,20 @@ section.kompetenzen {
   gap: 2rem;
 }
 
-.heading {
-  text-align: center;
-  margin-bottom: 5rem;
+.kompetenzen h2 {
   color: var(--text);
 }
 
 .kompetenzen_box {
-  min-width: 330px;
   display: flex;
   justify-content: center;
   align-items: baseline;
   background: var(--main);
+  min-width: 330px;
   min-height: 510px;
+  border: 5px solid transparent;
   border-radius: 2rem;
   cursor: pointer;
-  border: 5px solid transparent;
   transition: 0.4s ease-in-out;
 }
 
@@ -531,17 +387,12 @@ section.kompetenzen {
 
 .kompetenzen_info h3 {
   margin: 2rem 0;
-  font-weight: 800;
 }
 
 
 /*############################################################################*/
 /* Section Über Mich Angaben */
 /*############################################################################*/
-.uebermich h2 {
-  text-align: center;
-}
-
 section.uebermich .container {
   display: flex;
   flex-direction: column;
@@ -564,11 +415,11 @@ section.uebermich .container article:nth-of-type(2) {
 .uebermich_img div {
   background: url(../img/IMG_5762.jpeg) center right no-repeat;
   width: 100%;
+  height: 45vh;
   border-radius: 10% 25%;
   box-shadow: 0 0 25px var(--main);
   transition: 0.4s ease-in-out;
   background-size: cover;
-  height: 45vh;
 }
 
 .uebermich_content {
@@ -581,15 +432,15 @@ section.uebermich .container article:nth-of-type(2) {
 section.uebermich .container article:nth-of-type(2) div {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
   align-items: baseline;
-  background: var(--main);
+  min-width: 330px;
   height: auto;
+  padding: 1rem;
+  background: var(--main);
+  border: 5px solid transparent;
   border-radius: 2rem;
   cursor: pointer;
-  border: 5px solid transparent;
   transition: 0.4s ease-in-out;
-  min-width: 330px;
 }
 
 section.uebermich .container article:nth-of-type(2) div:hover {
@@ -622,18 +473,60 @@ section#projekte {
 #projekte p {
   text-align: center;
   margin-bottom: 3rem;
-  color: var(--text);
-  font-size: 1.15rem;
+}
+
+section#projekte .projects-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-right: 0;
+}
+
+section#projekte .projects-gallery {
+  width: 60%;
+}
+
+section#projekte .project-info {
+  width: 36%;
+  border-radius: 2rem;
+  padding: 0 0 0 1rem;
+  text-align: left;
+}
+
+section#projekte .project-info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+section#projekte .project-info h4 {
+  color: var(--dark_slate_gray);
+  margin: 0;
+}
+
+section#projekte .project-info p {
+  text-align: left;
+}
+
+@media (max-width: 1024px) {
+  section#projekte .projects-wrapper {
+    flex-direction: column;
+  }
+
+  section#projekte .projects-gallery,
+  section#projekte .project-info {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
 }
 
 /* Geräte-Container */
 .device-container {
   position: relative;
-  perspective: 1000px;
+  perspective: 700px;
   transition: all 0.5s ease;
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 1200px;
 }
 
 /* Monitor-Gehäuse */
@@ -641,23 +534,16 @@ section#projekte {
   position: relative;
   width: 100%;
   height: auto;
-  background: #1e1e1e;
   border-radius: 15px 15px 0 0;
   padding: 20px;
-  box-shadow:
-    0 20px 50px rgba(0, 0, 0, 0.7),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  border: 1px solid #333;
+  border: 1px solid var(--dark_slate_gray);
 }
 
 /* Monitor-Rahmen */
 .monitor-frame {
-  background: #111;
+  background: var(--dritte_hintergrund);
   border-radius: 10px;
   padding: 15px;
-  box-shadow:
-    inset 0 0 20px rgba(0, 0, 0, 0.8),
-    0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 /* Monitor-Fuß */
@@ -673,24 +559,21 @@ section#projekte {
 .stand-neck {
   width: 120px;
   height: 60px;
-  background: linear-gradient(to bottom, #2c2c2c, #1a1a1a);
+  background: linear-gradient(to bottom, rgba(44, 44, 44, 1.0), rgba(26, 26, 26, 1.0));
   border-radius: 0 0 10px 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .stand-base {
   width: 300px;
   height: 20px;
-  background: linear-gradient(to bottom, #333, #222);
+  background: linear-gradient(to bottom, rgba(51, 51, 51, 1.0), rgba(34, 34, 34, 1.0));
   border-radius: 10px 10px 20px 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
-  margin-top: 10px;
 }
 
 .stand-foot {
   width: 350px;
   height: 15px;
-  background: #111;
+  background: var(--hintergrund);
   border-radius: 5px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   margin-top: 5px;
@@ -705,17 +588,17 @@ section#projekte {
 .tablet {
   position: relative;
   width: 100%;
-  background: #1a1a1a;
+  background: var(--hintergrund);
   border-radius: 25px;
   padding: 25px;
   box-shadow:
     0 15px 40px rgba(0, 0, 0, 0.7),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  border: 1px solid #333;
+  border: 1px solid var(--dark_slate_gray);
 }
 
 .tablet-frame {
-  background: #111;
+  background: rgba(17, 17, 17, 1.0);
   border-radius: 15px;
   padding: 15px;
   box-shadow:
@@ -731,9 +614,9 @@ section#projekte {
   transform: translateX(-50%);
   width: 10px;
   height: 10px;
-  background: #222;
+  background: rgba(34, 34, 34, 1.0);
   border-radius: 50%;
-  border: 1px solid #333;
+  border: 1px solid var(--dark_slate_gray);
 }
 
 /* Tablet-Tasten */
@@ -750,7 +633,7 @@ section#projekte {
 .tablet-button {
   width: 5px;
   height: 40px;
-  background: #333;
+  background: rgba(51, 51, 51, 1.0);
   border-radius: 0 3px 3px 0;
 }
 
@@ -763,17 +646,17 @@ section#projekte {
 .phone {
   position: relative;
   width: 100%;
-  background: #1a1a1a;
-  border-radius: 35px;
+  background: var(--hintergrund);
   padding: 20px;
+  border: 1px solid var(--dark_slate_gray);
+  border-radius: 35px;
   box-shadow:
     0 10px 30px rgba(0, 0, 0, 0.7),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  border: 1px solid #333;
 }
 
 .phone-frame {
-  background: #111;
+  background: rgba(17, 17, 17, 1.0);
   border-radius: 25px;
   padding: 15px;
   box-shadow:
@@ -786,30 +669,30 @@ section#projekte {
   position: absolute;
   top: 5px;
   left: 50%;
-  transform: translateX(-50%);
   width: 100px;
   height: 24px;
   background: var(--hintergrund);
-  border-radius: 0 0 15px 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
+  border-radius: 0 0 15px 15px;
+  transform: translateX(-50%);
 }
 
 .phone-speaker {
   width: 40px;
   height: 5px;
-  background: #333;
+  background: rgba(51, 51, 51, 1.0);
   border-radius: 3px;
 }
 
 .phone-camera {
   width: 10px;
   height: 10px;
-  background: #222;
+  background: rgba(34, 34, 34, 1.0);
   border-radius: 50%;
-  border: 1px solid #444;
+  border: 1px solid rgba(68, 68, 68, 1.0);
 }
 
 /* Handy-Tasten */
@@ -826,17 +709,17 @@ section#projekte {
 .phone-button {
   width: 4px;
   height: 30px;
-  background: #333;
+  background: rgba(51, 51, 51, 1.0);
   border-radius: 3px 0 0 3px;
 }
 
 /* Gemeinsame Stile für alle Geräte */
 .screen {
   width: 100%;
-  background: #000;
-  border-radius: 5px;
+  background: var(--dritte_hintergrund);
   overflow: hidden;
   position: relative;
+  border-radius: 5px;
   box-shadow:
     inset 0 0 30px rgba(0, 0, 0, 0.9),
     0 0 0 1px rgba(255, 255, 255, 0.05);
@@ -844,7 +727,7 @@ section#projekte {
 
 /* Monitor-Bildschirm */
 .monitor .screen {
-  height: 500px;
+  height: 350px;
 }
 
 /* Tablet-Bildschirm */
@@ -874,21 +757,6 @@ section#projekte {
   border-radius: 5px 5px 0 0;
 }
 
-/* Power-LED für Monitor */
-/*
-.power-led {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  width: 12px;
-  height: 12px;
-  background: #2ecc71;
-  border-radius: 50%;
-  box-shadow: 0 0 10px #2ecc71;
-  animation: pulse 2s infinite;
-}
-*/
-
 @keyframes pulse {
 
   0%,
@@ -901,33 +769,6 @@ section#projekte {
   }
 }
 
-/* Gerät-Logo */
-/*
-.device-logo {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #666;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
-}
-
- Monitor-Logo 
-.monitor .device-logo {
-  content: "DISPLAY PRO 27\"";
-}
-
-/* Tablet-Logo
-.tablet .device-logo {
-  content: "TABLET MAX";
-}
-
-/* Handy-Logo 
-.phone .device-logo {
-  content: "PHONE X";
-}
-*/
 /* Bildergalerie im Gerät */
 .gallery-container {
   display: flex;
@@ -950,7 +791,7 @@ section#projekte {
 }
 
 .gallery-container::-webkit-scrollbar-thumb {
-  background: linear-gradient(90deg, #3498db, #2ecc71);
+  background: linear-gradient(90deg, rgba(52, 152, 219, 1.0), rgba(46, 204, 113, 1.0));
   border-radius: 4px;
 }
 
@@ -958,13 +799,12 @@ section#projekte {
 .image-item {
   flex: 0 0 auto;
   height: 100%;
-  border-radius: 8px;
   overflow: hidden;
   position: relative;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
   border: 2px solid transparent;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease;
 }
 
 /* Unterschiedliche Bildbreiten je nach Gerät */
@@ -1016,14 +856,13 @@ section#projekte {
   gap: 15px;
   margin-top: 20px;
   flex-wrap: wrap;
+
 }
 
 .control-btn {
-  background: linear-gradient(to bottom, #333, #222);
-  border: none;
+  background: linear-gradient(to bottom, rgba(51, 51, 51, 1.0), rgba(34, 34, 34, 1.0));
   color: var(--text);
   padding: 10px 20px;
-  border-radius: 20px;
   font-size: 0.9rem;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -1031,12 +870,13 @@ section#projekte {
   align-items: center;
   gap: 8px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  border: 1px solid #444;
+  border: 1px solid rgba(68, 68, 68, 1.0);
+  border-radius: 20px;
 }
 
 .control-btn:hover {
-  background: linear-gradient(to bottom, #444, #333);
-  color: rgb(255, 255, 255, 1.0);
+  background: linear-gradient(to bottom, rgba(68, 68, 68, 1.0), rgba(51, 51, 51, 1.0));
+  color: rgba(255, 255, 255, 1.0);
   transform: translateY(-2px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
 }
@@ -1058,12 +898,11 @@ section#projekte {
 .preview-info h3 {
   font-size: 1.5rem;
   margin-bottom: 8px;
-  color: #2ecc71;
+  color: rgba(46, 204, 113, 1.0);
 }
 
 .preview-info p {
   color: var(--text);
-  line-height: 1.5;
 }
 
 @keyframes slideUp {
@@ -1084,34 +923,30 @@ section#projekte {
 /*############################################################################*/
 section.kontakt {
   min-height: auto;
-}
-
-section.kontakt h2 {
   text-align: center;
-  margin-bottom: 4rem;
 }
 
-section.kontakt .container {
+section.kontakt .container .kontakt_boxes {
   display: flex;
   justify-content: space-between;
 }
 
-section.kontakt .container article {
+section.kontakt .container .kontakt_boxes article {
   background: var(--dark_slate_gray);
-  border-radius: 3rem;
-  box-shadow: 0px 2px 4px 0 var(--light_silver);
-  text-align: center;
-  padding: 1.5rem;
   width: 30%;
   height: auto;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 3rem;
+  box-shadow: 0px 2px 4px 0 var(--light_silver);
 }
 
-section.kontakt .container article a {
+section.kontakt .container .kontakt_boxes article a {
   font-size: 1.15rem;
   text-align: center;
 }
 
-section.kontakt .container article a:hover {
+section.kontakt .container .kontakt_boxes article a:hover {
   color: var(--light_silver);
   transform: scale(1.1);
 }
@@ -1149,7 +984,6 @@ footer {
   background: var(--zweite_hintergrund);
   color: var(--text);
   padding: 50px 0;
-  font-size: 1.2rem;
 }
 
 footer .container {
@@ -1256,7 +1090,6 @@ footer .Copyright {
   header .container {
     max-height: 10vh;
     display: flex;
-    justify-content: baseline;
     align-items: baseline;
 
   }
@@ -1264,15 +1097,6 @@ footer .Copyright {
   .logo img {
     height: 4rem;
   }
-
-  /*
-  .gradient_btn_resposive {
-    display: block;
-  }
-
-  .gradient_btn_resposive_two {
-    display: none;
-  }*/
 
   .navbar {
     position: fixed;
@@ -1319,13 +1143,6 @@ footer .Copyright {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-9.6px) rotate(-45deg);
   }
-
-  /*
-  .gradient_btn {
-    font-size: 1rem;
-    padding: 0.8rem 1rem;
-  }
- */
 
   /* Alle Sections*/
   section {
@@ -1376,7 +1193,7 @@ footer .Copyright {
   }
 
   /* kompetenzens Section */
-  .heading {
+  .kompetenzen {
     font-size: 2rem;
     margin: 3rem 0;
   }
@@ -1422,6 +1239,19 @@ footer .Copyright {
   }
 
   /* Projekte*/
+
+  section#projekte .projects-wrapper {
+    gap: 2rem;
+  }
+
+  section#projekte .projects-gallery {
+    width: 100%;
+  }
+
+  section#projekte .project-info {
+    width: 100%;
+  }
+
   .monitor-container,
   .phone-container {
     display: none;
@@ -1455,18 +1285,14 @@ footer .Copyright {
   }
 
   /* Kontakt */
-    section.kontakt .container {
-      gap: 1.5rem;
+  section.kontakt .container .kontakt_boxes {
+    gap: 1.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    }
-  section.kontakt .container article {
-    padding: 2rem;
-    width: auto;
   }
 
-  section.kontakt .container article a {
+  section.kontakt .container .kontakt_boxes article a {
     font-size: 1rem;
   }
 
@@ -1546,12 +1372,6 @@ footer .Copyright {
     height: 3rem;
   }
 
-  /*
-  .gradient_btn {
-    font-size: 1rem;
-  }
- */
-
   .navbar {
     position: fixed;
     left: -100%;
@@ -1589,18 +1409,12 @@ footer .Copyright {
   }
 
   .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(10px) rotate(45deg);
   }
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-
-  /*
-  .popup {
-    width: 90%;
-  }
-  */
 
   /* Alle Sections */
   section {
@@ -1623,10 +1437,13 @@ footer .Copyright {
     text-align: center;
   }
 
+  .home_content .ihk {
+    text-align: center;
+  }
+
   .home_content p {
     padding-left: 0;
     font-size: 0.85rem;
-    line-height: 1.6;
   }
 
   .home_img div {
@@ -1644,10 +1461,6 @@ footer .Copyright {
   }
 
   /* kompetenzen Section */
-  .heading {
-    margin: 2rem 0;
-  }
-
   .kompetenzen_container {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -1663,10 +1476,6 @@ footer .Copyright {
     padding: 1.5rem;
   }
 
-  .kompetenzen_info p {
-    line-height: 1.5;
-  }
-
   .kompetenzen_info svg {
     width: 60px;
   }
@@ -1677,9 +1486,9 @@ footer .Copyright {
     text-align: start;
   }
 
- section.uebermich .container article:nth-of-type(2) div {
-  min-width: auto;
- }
+  section.uebermich .container article:nth-of-type(2) div {
+    min-width: auto;
+  }
 
   .uebermich_img,
   .uebermich_content {
@@ -1696,6 +1505,16 @@ footer .Copyright {
   }
 
   /* Projekte */
+
+  section#projekte .projects-wrapper {
+    gap: 2rem;
+  }
+
+  section#projekte .projects-gallery,
+  section#projekte .project-info {
+    width: 100%;
+  }
+
   #projekte p {
     padding: 0 2rem;
   }
@@ -1744,13 +1563,13 @@ footer .Copyright {
     font-size: 0.8rem;
   }
 
-
-  /* Kontakt Section */
-  .kontakt h2 {
-    margin-bottom: 1.5rem;
+  .project-info .project-info-box p {
+    padding: 0 !important;
   }
 
-  .kontakt .container {
+
+  /* Kontakt Section */
+  .kontakt .container .kontakt_boxes {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1758,7 +1577,7 @@ footer .Copyright {
     gap: 2rem;
   }
 
-  section.kontakt .container article {
+  section.kontakt .container .kontakt_boxes article {
     width: 100%;
   }
 
