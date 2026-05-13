@@ -1,6 +1,6 @@
 /* jshint esversion: 6 */
 
-// Circle Follow the Cursor
+// Circle Follow The Cursor
 const circleElement = document.querySelector('.circle');
 
 const mouse = { x: 0, y: 0 };
