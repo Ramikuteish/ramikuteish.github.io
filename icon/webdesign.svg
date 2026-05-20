@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94.55 98.4">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: ArialRoundedMTBold, 'Arial Rounded MT Bold';
+        font-size: 22.5px;
+        stroke-width: .22px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-6 {
+        fill: #b2b1b1;
+        stroke: #b2b1b1;
+      }
+
+      .cls-7 {
+        fill: #67acdc;
+      }
+
+      .cls-7, .cls-2, .cls-3, .cls-8, .cls-4, .cls-5 {
+        stroke: #12120d;
+      }
+
+      .cls-7, .cls-8 {
+        stroke-linejoin: round;
+      }
+
+      .cls-7, .cls-8, .cls-4, .cls-5, .cls-6 {
+        stroke-linecap: round;
+      }
+
+      .cls-7, .cls-8, .cls-4, .cls-6 {
+        stroke-width: 2.89px;
+      }
+
+      .cls-2 {
+        fill: #fdd05b;
+        stroke-width: 1.78px;
+      }
+
+      .cls-3 {
+        fill: #fdcf57;
+        stroke-width: 2.22px;
+      }
+
+      .cls-8 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+
+      .cls-5 {
+        fill: #5fb989;
+        stroke-width: 2.66px;
+      }
+    </style>
+  </defs>
+  <line class="cls-6" x1="4.46" y1="26.01" x2="93.11" y2="26.01"/>
+  <line class="cls-6" x1="83.06" y1="6.35" x2="92.49" y2="6.35"/>
+  <line class="cls-6" x1="83.06" y1="11.96" x2="92.49" y2="11.96"/>
+  <line class="cls-6" x1="83.06" y1="17.03" x2="92.49" y2="17.03"/>
+  <line class="cls-6" x1="25.07" y1="18.33" x2="31.31" y2="5.1"/>
+  <text class="cls-1" transform="translate(.11 19.55) scale(.97 1)"><tspan x="0" y="0">UI</tspan></text>
+  <text class="cls-1" transform="translate(33.44 19.78) scale(.97 1)"><tspan x="0" y="0">UX</tspan></text>
+  <rect class="cls-7" x="42.59" y="34.36" width="48.92" height="62.53" rx="9.84" ry="9.84"/>
+  <path class="cls-8" d="m54.41,60.29c1.18,5.95,6.28,10.43,12.4,10.43,6.99,0,12.66-5.85,12.66-13.06s-5.67-13.06-12.66-13.06c-6.03,0-11.08,4.35-12.35,10.18"/>
+  <rect class="cls-2" x="50.91" y="79.66" width="32.39" height="7.88" rx="3.94" ry="3.94"/>
+  <g>
+    <path class="cls-3" d="m5.92,43.67v-5.2c0-2.31,1.81-4.17,4.05-4.17h19c2.23,0,4.05,1.87,4.05,4.17v24.68c0,2.31-1.81,4.17-4.05,4.17H9.97c-2.23,0-4.05-1.87-4.05-4.17v-13.58"/>
+    <line class="cls-4" x1="19.39" y1="43.57" x2="28.08" y2="43.57"/>
+    <line class="cls-4" x1="19.39" y1="58.43" x2="28.08" y2="58.43"/>
+    <line class="cls-4" x1="19.39" y1="50.95" x2="28.08" y2="50.95"/>
+    <line class="cls-4" x1="11.82" y1="43.57" x2="12.16" y2="43.57"/>
+    <line class="cls-4" x1="11.82" y1="58.43" x2="12.16" y2="58.43"/>
+    <line class="cls-4" x1="11.82" y1="50.95" x2="12.16" y2="50.95"/>
+  </g>
+  <g>
+    <path class="cls-5" d="m18.69,76.34h11.26c1.58,0,2.87,1.32,2.87,2.96v14.82c0,1.63-1.28,2.96-2.87,2.96H8.99c-1.58,0-2.87-1.32-2.87-2.96v-14.82c0-1.63,1.28-2.96,2.87-2.96h3.15"/>
+    <line class="cls-4" x1="13.71" y1="86.73" x2="25.96" y2="86.73"/>
+  </g>
+</svg>
