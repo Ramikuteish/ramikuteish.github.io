@@ -506,6 +506,30 @@ window.addEventListener('resize', detectDevice);
 // Galerie initialisieren
 initGallery();
 
+function initScrollReveal() {
+    const revealElements = document.querySelectorAll('.uebermich_img, .uebermich_content');
+
+    if ('IntersectionObserver' in window && revealElements.length > 0) {
+        const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    obs.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.2,
+            rootMargin: '0px 0px -10% 0px'
+        });
+
+        revealElements.forEach(el => observer.observe(el));
+    } else {
+        revealElements.forEach(el => el.classList.add('visible'));
+    }
+}
+
+initScrollReveal();
+
 // Startanimation für Geräte
 setTimeout(() => {
     const currentContainer = document.querySelector('.device-container[style*="display: block"]');
