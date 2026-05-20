@@ -213,6 +213,7 @@ header .container {
   transition: 0.3s ease-in-out;
   display: inline-flex;
   align-items: center;
+  position: absolute;
 }
 
 .logo img {
@@ -288,6 +289,24 @@ section.home {
   flex: 1;
   display: flex;
   flex-direction: column;
+  position: relative;
+  animation-name: homeContactAnimation;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes homeContactAnimation {
+  0% {
+    transform: translateX(-100vw);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .home_content h2 {
@@ -314,6 +333,24 @@ span {
   border-radius: 10% 25%;
   box-shadow: 0 0 25px var(--main);
   transition: 0.4s ease-in-out;
+  position: relative;
+  animation-name: myFotoAnimation;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes myFotoAnimation {
+  0% {
+    transform: translateX(100vw);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .btn_group {
@@ -361,15 +398,16 @@ section.kompetenzen {
 }
 
 .kompetenzen_container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
 }
 
 .flip_card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 340px;
+  height: 340px;
   perspective: 1000px;
 }
 
@@ -391,7 +429,7 @@ section.kompetenzen {
 .kompetenzen_box_back {
   width: 100%;
   height: 100%;
-  padding: 2rem 1rem;
+  padding: 2rem 1.5rem;
   border-radius: 2rem;
   cursor: pointer;
   position: absolute;
@@ -404,7 +442,7 @@ section.kompetenzen {
 }
 
 .kompetenzen_box_back {
-  background : var(--main);
+  background: var(--main);
   text-align: left;
   transform: rotateY(180deg);
 }
@@ -421,6 +459,7 @@ section.kompetenzen {
 
 .kompetenzen_info h3 {
   margin: 2rem 0;
+
 }
 
 
@@ -452,8 +491,40 @@ section.uebermich .container article:nth-of-type(2) {
   height: 45vh;
   border-radius: 10% 25%;
   box-shadow: 0 0 25px var(--main);
-  transition: 0.4s ease-in-out;
   background-size: cover;
+  position: relative;
+  animation-name: ueberMichAnimation;
+  animation-duration: 10s;
+}
+
+@keyframes ueberMichAnimation {
+  0% {
+    transform: translateX(-100vw);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.uebermich_img,
+.uebermich_content {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  position: relative;
+}
+
+.uebermich_img.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation-name: ueberMichAnimation;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
 }
 
 .uebermich_content {
@@ -461,28 +532,67 @@ section.uebermich .container article:nth-of-type(2) {
   flex-direction: column;
   align-self: flex-start;
   width: 50%;
+  position: relative;
+}
+
+@keyframes ueberMichContactAnimation {
+  0% {
+    transform: translateX(100vw);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.uebermich_content.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation-name: ueberMichContactAnimation;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+
+section.uebermich .container article:nth-of-type(2) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 section.uebermich .container article:nth-of-type(2) div {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
-  min-width: 330px;
-  height: auto;
-  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  max-height: 200px;
   background: var(--main);
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+section.uebermich .container article:nth-of-type(2) div>div {
+  cursor: pointer;
+  box-shadow: 2px 2px 5px var(--zweite_hintergrund);
+  background: var(--main);
+  width: 500px;
   border: 5px solid transparent;
   border-radius: 2rem;
-  cursor: pointer;
+  max-height: 130px;
   transition: 0.4s ease-in-out;
 }
 
-section.uebermich .container article:nth-of-type(2) div:hover {
+section.uebermich .container article:nth-of-type(2) div>div:hover {
   transform: scale(1.03);
 }
 
-section.uebermich .container article:nth-of-type(2) div ul {
-  padding: 0;
+section.uebermich .container article:nth-of-type(2) h4 {
+  text-align: center;
 }
 
 ::-webkit-scrollbar {
@@ -1084,12 +1194,27 @@ footer .Copyright {
   width: 200px;
 }
 
+@media only screen and (max-width: 1024px) {
+  section.uebermich .container article:nth-of-type(2) div {
+    width: auto !important;
+  }
+
+  section.uebermich .container article:nth-of-type(2) div>div {
+    width: 100% !important;
+  }
+
+  section.uebermich .container article:nth-of-type(2) h4 {
+    font-size: 1rem;
+  }
+}
+
+
 /*############################################################################*/
 /* Responsive Design - Tablet */
 /*############################################################################*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .container {
-    padding: 0 2rem;
+    padding: 0;
   }
 
   h1 {
@@ -1125,7 +1250,6 @@ footer .Copyright {
     max-height: 10vh;
     display: flex;
     align-items: baseline;
-
   }
 
   .logo img {
@@ -1259,7 +1383,6 @@ footer .Copyright {
   }
 
   section.uebermich .container article:nth-of-type(1) {
-    flex-direction: row;
     gap: 2rem;
   }
 
@@ -1538,8 +1661,17 @@ footer .Copyright {
     font-size: 0.85rem;
   }
 
-  /* Projekte */
+  section.uebermich .container article:nth-of-type(2) div {
+    width: 350px;
+    max-height: 200px;
+  }
 
+  section.uebermich .container article:nth-of-type(2) div>div {
+    width: 300px;
+    max-height: 130px;
+  }
+
+  /* Projekte */
   section#projekte .projects-wrapper {
     gap: 2rem;
   }
