@@ -1836,6 +1836,6 @@ footer .Copyright {
 
   .impressum_main h1,
   .datenschutz_main h1 {
-    font-size: calc(1.68rem - 1vw);
+    font-size: calc(2rem - 1vw);
   }
 }
