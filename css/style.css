@@ -163,6 +163,7 @@ h6 {
 p {
   font-size: 1rem;
   line-height: 1.7;
+  color: var(--text);
 }
 
 li {
@@ -1195,9 +1196,15 @@ footer .Copyright {
 /*############################################################################*/
 /* Impressum & Datenschutz Seiten */
 /*############################################################################*/
+.impres_site .container,
+.daten_site .container {
+  padding: 0 1rem;
+}
+
 .impressum_main,
 .datenschutz_main {
-  padding: 10rem 0;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
 }
 
 .impressum_main h2,
@@ -1213,6 +1220,10 @@ footer .Copyright {
   width: 200px;
 }
 
+
+/*############################################################################*/
+/* Responsive Design */
+/*############################################################################*/
 @media only screen and (max-width: 1024px) {
   .circle {
     display: none;
@@ -1825,7 +1836,6 @@ footer .Copyright {
 
   .impressum_main h1,
   .datenschutz_main h1 {
-    padding-right: 1rem;
-    font-size: 1.85rem;
+    font-size: calc(1.68rem - 1vw);
   }
 }
