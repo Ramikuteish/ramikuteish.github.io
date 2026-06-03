@@ -9,12 +9,13 @@
   <meta name="author" content="Rami Kuteish">
   <title>Rami Kuteish | Webdesigner</title>
   <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
   <div class="circle"></div>
-  <header>
+  <header class="header">
     <div class="container">
       <a href="#" class="logo">
         <img src="./logo/logo.svg" alt="Rami Kuteish - Logo">
@@ -22,9 +23,8 @@
       <i class="box box_menu" id="menu_icon"></i>
       <nav class="navbar">
         <a href="#home">Home</a>
-        <a href="#kompetenzen">Kompetenzen</a>
-        <a href="#uebermich">Über Mich</a>
         <a href="#projekte">Projekte</a>
+        <a href="#uebermich">Über Mich</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
       <div class="hamburger">
@@ -38,101 +38,133 @@
     <section class="home" id="home">
       <div class="container">
         <div class="home_content">
-          <h1>Rami Kuteish</h1>
-          <h2 class="ihk">Junior Webdesigner & Mediengestalter Digital & Print <span>(IHK)</span></h2>
-          <h3>
-            Ich gestalte und entwickle moderne, responsive Webseiten mit Fokus auf Nutzerfreundlichkeit und Barrierefreiheit.
-          </h3>
-          <p> Erfahrung mit HTML, CSS, JavaScript und WordPress / Sitejet
-          </p>
+          <h1>Junior Webdesigner & Mediengestalter Digital & Print <span>(IHK)</span></h1>
+          <h3 class="ihk">Ich gestalte und entwickle moderne, responsive Webseiten mit Fokus auf Nutzerfreundlichkeit
+            und Barrierefreiheit.</h3>
           <div class="btn_group">
-            <a href="#projekte" class="btn">Projekte ansehen</a>
-            <a href="#kontakt" class="btn">Kontakt aufnehmen</a>
+            <button href="#kontakt" class="btn"><span>Kontakt aufnehmen</span></button>
+            <button href="#projekte" class="btn"><span>Mehr über mich</span></button>
           </div>
         </div>
         <div class="home_img">
           <div></div>
         </div>
       </div>
-    </section>
-    <section class="kompetenzen" id="kompetenzen">
-      <div class="container">
-        <h2 class="heading"><span>Meine </span>Kompetenzen</h2>
-        <div class="kompetenzen_container">
-          <div class="flip_card">
-            <div class="flip_card_inner">
-              <div class="kompetenzen_box_front">
-                <a href="" class="kompetenzen_icon">
-                  <img src="./icon/responsive.svg" alt="Responsive Design Icon">
-                </a>
-                <h3>Webdesign & <br> Responsive Design</h3>
-              </div>
-              <div class="kompetenzen_box_back">
-                <p>Gestaltung und Umsetzung moderner Websites mit Fokus auf: <br> &#10147; Nutzerfreundlichkeit <br>
-                  &#10147; Performance <br> &#10147; optimale Darstellung auf Desktop, Tablet und Smartphone.</p>
-              </div>
+      <div class="home_icons">
+        <div class="container">
+          <article>
+            <div href="" class="home_icon">
+              <img src="./icon/responsive.svg" alt="Responsive Design Icon">
             </div>
-          </div>
-          <div class="flip_card">
-            <div class="flip_card_inner">
-              <div class="kompetenzen_box_front">
-                <a href="" class="kompetenzen_icon">
-                  <img src="./icon/cms.svg" alt="CMS Icon">
-                </a>
-                <h3>CMS & <br> Content-Pflege</h3>
-              </div>
-              <div class="kompetenzen_box_back">
-                <p>Erfahrung mit Sitejet und WordPress: <br>
-                  &#10147; Einpflege und Verwaltung von Inhalten <br>
-                  &#10147; Erstellung von Blogs und Collections <br>
-                  &#10147; Anpassung von Navigationen und Seitenstrukturen <br>
-                  &#10147; Pflege und Optimierung bestehender Websites
-                </p>
-              </div>
+            <p>Responsive <br> Design</p>
+          </article>
+          <hr>
+          <article>
+            <div href="" class="home_icon">
+              <img src="./icon/cms.svg" alt="CMS Icon">
             </div>
-          </div>
-          <div class="flip_card">
-            <div class="flip_card_inner">
-              <div class="kompetenzen_box_front">
-                <a href="" class="kompetenzen_icon">
-                  <img src="./icon/webdesign.svg" alt="Webdesign Icon">
-                </a>
-                <h3>UI/UX & <br> Website-Optimierung</h3>
-              </div>
-              <div class="kompetenzen_box_back">
-                <p>
-                  &#10147; Konzeption benutzerfreundlicher Interfaces sowie Optimierung von Design <br>
-                  &#10147; Optimierung bestehender Websites in Design, Struktur und Usability. <br>
-                  &#10147; Struktur und Usability zur Verbesserung der Nutzererfahrung auf allen Endgeräten
-                </p>
-              </div>
+            <p>CMS & <br> Content-Pflege</p>
+          </article>
+          <hr>
+          <article>
+            <div href="" class="home_icon">
+              <img src="./icon/webdesign.svg" alt="Webdesign Icon">
             </div>
-          </div>
-          <div class="flip_card">
-            <div class="flip_card_inner">
-              <div class="kompetenzen_box_front">
-                <a href="" class="kompetenzen_icon">
-                  <img src="./icon/technischekenntnisse.svg" alt="Technische Kenntnisse Icon">
-                </a>
-                <h3>Technische <br> Kenntnisse</h3>
-              </div>
-              <div class="kompetenzen_box_back">
-                <p>
-                  &#10147; HTML5 - CSS3 <br>
-                  &#10147; JavaScript (React) - Grundlagen in PHP<br>
-                  &#10147; Sitejet - WordPress <br>
-                  &#10147; GitHub <br>
-                  &#10147; Figma <br>
-                  &#10147; Adobe Photoshop - Adobe Illustrator - Adobe XD <br>
-                </p>
-              </div>
+            <p>UI/UX & <br> Website-Optimierung</p>
+          </article>
+          <hr>
+          <article>
+            <div href="" class="home_icon">
+              <img src="./icon/technischekenntnisse.svg" alt="Technische Kenntnisse Icon">
             </div>
-          </div>
+            <p>Technische <br> Kenntnisse</p>
+          </article>
         </div>
+      </div>
+    </section>
+    <section id="projekte">
+      <div class="container">
+        <header class="projects-header">
+          <div>
+            <p class="project-category">MEINE ARBEIT</p>
+            <h2 class="heading">Ausgewählte Projekte</h2>
+            <p>Eine Auswahl meiner Webprojekte mit Fokus auf <br> Responsive Design und Nutzerfreundlichkeit.</p>
+          </div>
+          <div>
+            <button class="btn" type="button" onclick="location.href='./html/Projects.html'"><span>Allle Projekte
+                ansehen</span></button>
+          </div>
+        </header>
+        <main class="projects-main">
+          <article>
+            <div class="projekts_left">
+              <aside class="project-info" id="projectInfo">
+                <div class="project-info-box">
+                  <h3 id="projectTitle">Berolina Security – Unternehmenswebsite</h3>
+                  <p id="projectDescription">Erstellung und Pflege einer Unternehmenswebsite im Sicherheitsbereich.
+                    <hr>
+                    &#128187; Sitejet CMS
+                    <b>Ergebnis:</b> Moderne, übersichtliche Website zur Präsentation der Dienstleistungen.`
+                  </p>
+                </div>
+              </aside>
+            </div>
+            <div class="projekts_right">
+              <!-- Monitor (Desktop) -->
+              <div class="device-container monitor-container">
+                  <div class="screen">
+                    <button class="control-btn">
+                      <a class="arrow" href="./html/projects.html#projktone">→</a>
+                    </button>
+                  </div>
+              </div>
+              <!-- Tablet -->
+              <div class="device-container tablet-container">
+                <div class="tablet">
+                  <div class="screen">
+                    <button class="control-btn">
+                      <a class="arrow" href="./html/projects.html#projktone">→</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Handy (Mobile) -->
+              <div class="device-container phone-container">
+                <div class="screen">
+                  <button class="control-btn">
+                    <a class="arrow" href="./html/projects.html#projktone">→</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="project1 project-cards">
+              <button class="control-btn">
+                <a class="arrow" href="./html/projects.html#projktfive">→</a>
+              </button>
+            </div>
+            <div class="project2 project-cards">
+              <button class="control-btn">
+                <a class="arrow" href="./html/projects.html#projkttwo">→</a>
+              </button>
+            </div>
+            <div class="project3 project-cards">
+              <button class="control-btn">
+                <a class="arrow" href="./html/projects.html#projktthree">→</a>
+              </button>
+            </div>
+            <div class="project4 project-cards">
+              <button class="control-btn">
+                <a class="arrow" href="./html/projects.html#projktfour">→</a> </button>
+            </div>
+          </article>
+        </main>
+      </div>
     </section>
     <section class="uebermich" id="uebermich">
-      <h2>Über <span>Mich</span></h2>
       <div class="container">
+        <h2>Über <span>Mich</span></h2>
         <article>
           <div class="uebermich_img">
             <div></div>
@@ -186,100 +218,13 @@
               <h4>Sorgfältige und lösungsorientierte Umsetzung von Projekten</h4>
             </div>
           </div>
-
-
         </article>
-      </div>
-    </section>
-    <section id="projekte">
-      <h2 class="heading"><span>Meine </span>Projekte</h2>
-      <p>Eine Auswahl meiner Webprojekte mit Fokus auf Responsive Design und Nutzerfreundlichkeit.</p>
-      <div class="container">
-        <div class="projects-wrapper">
-          <div class="projects-gallery">
-            <!-- Monitor (Desktop) -->
-            <div class="device-container monitor-container" id="monitorContainer">
-              <div class="monitor">
-                <!-- <div class="power-led"></div> -->
-                <div class="monitor-frame">
-                  <div class="screen">
-                    <div class="gallery-container" id="galleryContainer">
-                      <!-- Bilder werden hier dynamisch eingefügt -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Monitor-Standfuß -->
-              <div class="monitor-stand">
-                <div class="stand-neck"></div>
-                <div class="stand-base"></div>
-                <div class="stand-foot"></div>
-              </div>
-            </div>
-            <!-- Tablet -->
-            <div class="device-container tablet-container" id="tabletContainer">
-              <div class="tablet">
-                <div class="tablet-camera"></div>
-                <div class="tablet-buttons">
-                  <div class="tablet-button"></div>
-                  <div class="tablet-button"></div>
-                </div>
-                <div class="tablet-frame">
-                  <div class="screen">
-                    <div class="screen-content">
-                      <div class="gallery-container" id="galleryContainerTablet">
-                        <!-- Bilder werden hier dynamisch eingefügt -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Handy (Mobile) -->
-            <div class="device-container phone-container" id="phoneContainer">
-              <div class="phone">
-                <div class="phone-notch">
-                  <div class="phone-speaker"></div>
-                  <div class="phone-camera"></div>
-                </div>
-                <div class="phone-buttons">
-                  <div class="phone-button"></div>
-                  <div class="phone-button"></div>
-                  <div class="phone-button"></div>
-                </div>
-                <div class="phone-frame">
-                  <div class="screen">
-                    <div class="screen-content">
-                      <div class="gallery-container" id="galleryContainerPhone">
-                        <!-- Bilder werden hier dynamisch eingefügt -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Geräte-Steuerung -->
-            <div class="device-controls">
-              <button class="control-btn" id="scrollLeftBtn">
-                <span>◀</span> Zurück
-              </button>
-              <button class="control-btn" id="scrollRightBtn">
-                Vor <span>▶</span>
-              </button>
-            </div>
-          </div>
-          <aside class="project-info" id="projectInfo">
-            <div class="project-info-box">
-              <h4 id="projectTitle"></h4>
-              <p id="projectDescription"></p>
-            </div>
-          </aside>
-        </div>
       </div>
     </section>
     <section class="kontakt" id="kontakt">
       <div class="container">
-        <h2>Ich bin aktuell auf der Suche nach einer Junior-Position im Bereich <br> Webdesign / Mediengestaltung</h2>
+        <h3>Ich bin aktuell auf der Suche nach einer Junior-Position im Bereich <span>Webdesign /
+            Mediengestaltung</span></h3>
         <p>Ich bringe praktische Erfahrung aus Projekten und einem Praktikum mit und arbeite strukturiert, zuverlässig
           und lösungsorientiert. <br>Ich freue mich darauf, mein Wissen in einem professionellen Umfeld einzusetzen.</p>
         <div class="kontakt_boxes">
@@ -299,32 +244,30 @@
             <div>
               <h3>Social</h3>
               <div class="social_icons">
-                <a href="https://github.com/Ramikuteish" class="social_github" title="GitHub" target="_blank"
-                  rel="noopener noreferrer">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                  </svg>
-                </a>
-                <a href="https://www.linkedin.com/in/rami-kuteish-6aba45233/" class="social_linkedin" title="LinkedIn"
-                  target="_blank" rel="noopener noreferrer">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
-                  </svg>
-                </a>
-                <a href="https://www.xing.com/profile/Rami_Kuteish/" class="social_xing" title="XING" target="_blank"
-                  rel="noopener noreferrer">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="426.896 102.499 170.207 200"
-                    id="xing">
-                    <path fill="currentColor"
-                      d="M442.394 142c-1.736 0-3.197.61-3.934 1.803-.76 1.231-.645 2.818.166 4.424l19.503 33.761c.033.064.033.105 0 .164l-30.648 54.084c-.799 1.592-.76 3.191 0 4.425.736 1.187 2.033 1.966 3.771 1.966h28.844c4.312 0 6.393-2.91 7.867-5.57 0 0 29.973-53.01 31.14-55.068-.118-.19-19.83-34.58-19.83-34.58-1.439-2.557-3.606-5.41-8.03-5.41h-28.849z" />
-                    <path fill="currentColor"
-                      d="M563.574 102.501c-4.309 0-6.176 2.714-7.723 5.494 0 0-62.14 110.2-64.188 113.818.105.196 40.984 75.191 40.984 75.191 1.432 2.558 3.641 5.494 8.06 5.494h28.81c1.738 0 3.096-.654 3.828-1.843.77-1.23.748-2.857-.059-4.458l-40.664-74.295a.167.167 0 0 1 0-.189l63.863-112.92c.803-1.594.82-3.22.061-4.452-.736-1.188-2.098-1.843-3.836-1.843h-29.139v.002h.003z" />
-                  </svg>
-                </a>
+                <div class="tooltip-group">
+                  <a class="github-btn" href='https://github.com/Ramikuteish' target="_blank">
+                    <i class="fa-brands social-icon github-icon fa-github"></i>
+                  </a>
+                  <span class="tooltip">
+                    GitHub
+                  </span>
+                </div>
+                <div class="tooltip-group">
+                  <a class="social-btn" href='https://www.linkedin.com/in/rami-kuteish-6aba45233/' target="_blank">
+                    <i class="fa-brands social-icon linkedin-icon fa-linkedin"></i>
+                  </a>
+                  <span class="tooltip">
+                    LinkedIn
+                  </span>
+                </div>
+                <div class="tooltip-group">
+                  <a class="social-btn" href='https://www.xing.com/profile/Rami_Kuteish/' target="_blank">
+                    <i class="fa-brands fa-xing social-icon xing-icon"></i>
+                  </a>
+                  <span class="tooltip">
+                    XING
+                  </span>
+                </div>
               </div>
             </div>
           </article>
@@ -337,9 +280,9 @@
       <div>
         <ul class="list">
           <li><a href="#home">Home</a></li>
+          <li><a href="#projekte">Projekte</a></li>
           <li><a href="#uebermich">Über mich</a></li>
           <li><a href="#kompetenzen">Kompetenzen</a></li>
-          <li><a href="#projekte">Projekte</a></li>
         </ul>
         <div class="rechts">
           <ul>
