@@ -593,7 +593,7 @@ section#projekte hr {
 
 .project2 {
   background: linear-gradient(rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.5)), url(../img/Der\ NASCH\ e.V.jpg)no-repeat center;
+      rgba(0, 0, 0, 0.5)), url(../img/Der\ NASCH\ e.V.jpg) no-repeat center;
   background-size: cover;
   grid-column: 3 / 5;
   border: 1px solid transparent;
@@ -602,7 +602,7 @@ section#projekte hr {
 
 .project3 {
   background: linear-gradient(rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.5)), url(../img/waldtriathlon\ in\ Trainingen.jpg)no-repeat center;
+      rgba(0, 0, 0, 0.5)), url(../img/waldtriathlon\ in\ Trainingen.jpg) no-repeat center;
   background-size: cover;
   grid-column: 5 / 7;
   border: 1px solid transparent;
@@ -611,7 +611,7 @@ section#projekte hr {
 
 .project4 {
   background: linear-gradient(rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.5)), url(../img/flyer/Moderne und dezente Outfits1.jpg)no-repeat center;
+      rgba(0, 0, 0, 0.5)), url(../img/flyer/ModerneUndDezenteOutfits1.jpg) no-repeat center;
   background-size: cover;
   grid-column: 7 / 9;
   border: 1px solid transparent;
