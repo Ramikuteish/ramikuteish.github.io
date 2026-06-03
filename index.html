@@ -42,8 +42,8 @@
           <h3 class="ihk">Ich gestalte und entwickle moderne, responsive Webseiten mit Fokus auf Nutzerfreundlichkeit
             und Barrierefreiheit.</h3>
           <div class="btn_group">
-            <button href="#kontakt" class="btn"><span>Kontakt aufnehmen</span></button>
-            <button href="#projekte" class="btn"><span>Mehr über mich</span></button>
+            <button onclick="location.href='#kontakt'" class="btn"><span>Kontakt aufnehmen</span></button>
+            <button onclick="location.href='#uebermich'" class="btn"><span>Mehr über mich</span></button>
           </div>
         </div>
         <div class="home_img">
@@ -53,28 +53,28 @@
       <div class="home_icons">
         <div class="container">
           <article>
-            <div href="" class="home_icon">
+            <div class="home_icon">
               <img src="./icon/responsive.svg" alt="Responsive Design Icon">
             </div>
             <p>Responsive <br> Design</p>
           </article>
           <hr>
           <article>
-            <div href="" class="home_icon">
+            <div class="home_icon">
               <img src="./icon/cms.svg" alt="CMS Icon">
             </div>
             <p>CMS & <br> Content-Pflege</p>
           </article>
           <hr>
           <article>
-            <div href="" class="home_icon">
+            <div class="home_icon">
               <img src="./icon/webdesign.svg" alt="Webdesign Icon">
             </div>
             <p>UI/UX & <br> Website-Optimierung</p>
           </article>
           <hr>
           <article>
-            <div href="" class="home_icon">
+            <div class="home_icon">
               <img src="./icon/technischekenntnisse.svg" alt="Technische Kenntnisse Icon">
             </div>
             <p>Technische <br> Kenntnisse</p>
@@ -95,7 +95,7 @@
                 ansehen</span></button>
           </div>
         </header>
-        <main class="projects-main">
+        <div class="projects-main">
           <article>
             <div class="projekts_left">
               <aside class="project-info" id="projectInfo">
@@ -103,8 +103,8 @@
                   <h3 id="projectTitle">Berolina Security – Unternehmenswebsite</h3>
                   <p id="projectDescription">Erstellung und Pflege einer Unternehmenswebsite im Sicherheitsbereich.
                     <hr>
-                    &#128187; Sitejet CMS
-                    <b>Ergebnis:</b> Moderne, übersichtliche Website zur Präsentation der Dienstleistungen.`
+                    &#128187; Sitejet CMS <b>Ergebnis:</b> Moderne, übersichtliche Website zur Präsentation der
+                    Dienstleistungen.
                   </p>
                 </div>
               </aside>
@@ -112,11 +112,11 @@
             <div class="projekts_right">
               <!-- Monitor (Desktop) -->
               <div class="device-container monitor-container">
-                  <div class="screen">
-                    <button class="control-btn">
-                      <a class="arrow" href="./html/projects.html#projktone">→</a>
-                    </button>
-                  </div>
+                <div class="screen">
+                  <button class="control-btn">
+                    <a class="arrow" href="./html/projects.html#projktone">→</a>
+                  </button>
+                </div>
               </div>
               <!-- Tablet -->
               <div class="device-container tablet-container">
@@ -159,7 +159,7 @@
                 <a class="arrow" href="./html/projects.html#projktfour">→</a> </button>
             </div>
           </article>
-        </main>
+        </div>
       </div>
     </section>
     <section class="uebermich" id="uebermich">
@@ -295,7 +295,7 @@
     </div>
   </footer>
   <script src="https://kit.fontawesome.com/89b2f7c374.js" crossorigin="anonymous"></script>
-  <script src="./js/script.js"></script>
+  <script defer src="./js/script.js"></script>
 </body>
 
 </html>
