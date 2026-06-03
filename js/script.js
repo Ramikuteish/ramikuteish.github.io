@@ -80,92 +80,97 @@ initScrollReveal();
 
 
 /////////////////////////////////////////////////// Modal für Videos und Bilder
-const modal = document.getElementById("videoModal");
-const video = document.getElementById("projectVideo");
-const closeBtn = document.querySelector(".modal-close");
+document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("videoModal");
+    const video = document.getElementById("projectVideo");
+    const closeBtn = document.querySelector(".modal-close");
 
-document.querySelectorAll(".project-card").forEach(card => {
-    card.addEventListener("click", e => {
-        e.preventDefault();
+    // Auf Seiten ohne Modal: diesen Teil überspringen
+    if (!modal || !video || !closeBtn) return;
 
-        video.src = card.dataset.video;
-        modal.classList.add("active");
-        video.play();
+    document.querySelectorAll(".project-card").forEach(card => {
+        card.addEventListener("click", e => {
+            e.preventDefault();
+
+            video.src = card.dataset.video;
+            modal.classList.add("active");
+            video.play();
+        });
     });
-});
 
-function closeModal() {
-    modal.classList.remove("active");
-    video.pause();
-    video.currentTime = 0;
-    video.src = "";
-}
-
-
-closeBtn.addEventListener("click", closeModal);
-
-modal.addEventListener("click", e => {
-    if (e.target === modal) {
-        closeModal();
+    function closeModal() {
+        modal.classList.remove("active");
+        video.pause();
+        video.currentTime = 0;
+        video.src = "";
     }
-});
 
 
-const modal2 = document.getElementById("imgModal");
-const img = document.getElementById("projectImg");
-const closeBtn2 = document.querySelector(".modal-close2");
+    closeBtn.addEventListener("click", closeModal);
 
-let currentImages = [];
-let currentIndex = 0;
+    modal.addEventListener("click", e => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
 
-document.querySelectorAll(".project-card2").forEach(card2 => {
-    card2.addEventListener("click", e => {
-        e.preventDefault();
 
-        currentImages = card2.dataset.images
-            .split(",")
-            .map(img => img.trim());
+    const modal2 = document.getElementById("imgModal");
+    const img = document.getElementById("projectImg");
+    const closeBtn2 = document.querySelector(".modal-close2");
 
-        currentIndex = 0;
+    let currentImages = [];
+    let currentIndex = 0;
+
+    document.querySelectorAll(".project-card2").forEach(card2 => {
+        card2.addEventListener("click", e => {
+            e.preventDefault();
+
+            currentImages = card2.dataset.images
+                .split(",")
+                .map(img => img.trim());
+
+            currentIndex = 0;
+
+            img.src = currentImages[currentIndex];
+            modal2.classList.add("active");
+        });
+    });
+
+    document.getElementById("nextImg").addEventListener("click", () => {
+
+        currentIndex++;
+
+        if (currentIndex >= currentImages.length) {
+            currentIndex = 0;
+        }
 
         img.src = currentImages[currentIndex];
-        modal2.classList.add("active");
+
     });
-});
 
-document.getElementById("nextImg").addEventListener("click", () => {
+    document.getElementById("prevImg").addEventListener("click", () => {
 
-    currentIndex++;
+        currentIndex--;
 
-    if (currentIndex >= currentImages.length) {
-        currentIndex = 0;
+        if (currentIndex < 0) {
+            currentIndex = currentImages.length - 1;
+        }
+
+        img.src = currentImages[currentIndex];
+
+    });
+
+    function closeModal2() {
+        modal2.classList.remove("active");
+        img.src = "";
     }
 
-    img.src = currentImages[currentIndex];
+    closeBtn2.addEventListener("click", closeModal2);
 
-});
-
-document.getElementById("prevImg").addEventListener("click", () => {
-
-    currentIndex--;
-
-    if (currentIndex < 0) {
-        currentIndex = currentImages.length - 1;
-    }
-
-    img.src = currentImages[currentIndex];
-
-});
-
-function closeModal2() {
-    modal2.classList.remove("active");
-    img.src = "";
-}
-
-closeBtn2.addEventListener("click", closeModal2);
-
-modal2.addEventListener("click", e => {
-    if (e.target === modal2) {
-        closeModal2();
-    }
-});
+    modal2.addEventListener("click", e => {
+        if (e.target === modal2) {
+            closeModal2();
+        }
+    });
+    });
