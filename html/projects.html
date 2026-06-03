@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio von Rami Kuteish – Junior Mediengestalter Digital mit Schwerpunkt Webdesign, UI/UX und Responsive Design.">
+    <meta name="author" content="Rami Kuteish">
+    <title>Rami Kuteish | Webdesigner</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="circle"></div>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="../logo/logo.svg" alt="Rami Kuteish - Logo">
+            </a>
+            <i class="box box_menu" id="menu_icon"></i>
+            <nav class="navbar">
+                <a href="../index.html#home">Home</a>
+                <a href="../index.html#projekte">Projekte</a>
+                <a href="../index.html#uebermich">Über Mich</a>
+                <a href="../index.html#kontakt">Kontakt</a>
+            </nav>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+    <main class="projects-page">
+        <div class="container">
+            <div class="projects-hero">
+                <span>Portfolio</span>
+                <h1>Ausgewählte Projekte</h1>
+                <p>Klicke auf ein Projekt, um ein kurzes Video anzusehen.</p>
+            </div>
+            <section class="projects-list">
+                <a href="#" id="projktone" class="project-card" data-video="../video/Berolina Security.mp4">
+                    <div class="project-img">
+                        <img src="../img/WeProtect Berlin.jpg" alt="">
+                    </div>
+                    <div class="project-text">
+                        <span>Website · Sitejet CMS</span>
+                        <h2>Berolina Security</h2>
+                        <p>Moderne Unternehmenswebsite für Sicherheitsdienstleistungen.</p>
+                    </div>
+                    <div class="project-arrow">→</div>
+                </a>
+                <a href="#" id="projkttwo" class="project-card" data-video="../video/Nasch e.v..mp4">
+                    <div class="project-img">
+                        <img src="../img/Der NASCH e.V.jpg" alt="">
+                    </div>
+                    <div class="project-text">
+                        <span>Website · HTMI, CSS & JS</span>
+                        <h2>Der NASCH e.V.</h2>
+                        <p>Responsive Website für die IHK-Abschlussprojekt</p>
+                    </div>
+                    <div class="project-arrow">→</div>
+                </a>
+                <a href="#" id="projktthree" class="project-card" data-video="../video/Waldtrathlon.mp4">
+                    <div class="project-img">
+                        <img src="../img/waldtriathlon in Trainingen.jpg" alt="">
+                    </div>
+                    <div class="project-text">
+                        <span>Website · HTML & CSS</span>
+                        <h2>Waldtriathlon</h2>
+                        <p>Responsive Website für Event Website (Zwichenprüfung)</p>
+                    </div>
+                    <div class="project-arrow">→</div>
+                </a>
+                <a href="#" id="projktfour" class="project-card2"
+                    data-images="../img/flyer/Moderne und dezente Outfits1.JPG, ../img/flyer/Moderne und dezente Outfits2.JPG">
+                    <div class="project-img">
+                        <img src="../img/flyer/Moderne und dezente Outfits1.JPG" alt="">
+                    </div>
+                    <div class="project-text">
+                        <span>Flyer · Adobe Indesign</span>
+                        <h2>Fashion Flyer</h2>
+                        <p>Modernes Printdesign für Mode.</p>
+                    </div>
+                    <div class="project-arrow">→</div>
+                </a>
+                <a href="#" id="projktfive" class="project-card2"
+                    data-images="../img/flyer/Klangvoll_Doppelseite_1.jpg, ../img/flyer/Klangvoll_Doppelseite_2.jpg, ../img/flyer/Klangvoll_Doppelseite_3.jpg">
+                    <div class="project-img">
+                        <img src="../img/flyer/Klangvoll_Doppelseite_1.jpg" alt="">
+                    </div>
+                    <div class="project-text">
+                        <span>Katalog · XML & Adobe Indesign</span>
+                        <h2>Schallplatten Katalog</h2>
+                        <p>Modernes Printdesign für Schallplatten.</p>
+                    </div>
+                    <div class="project-arrow">→</div>
+                </a>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div>
+                <ul class="list">
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="../index.html#projekte">Projekte</a></li>
+                    <li><a href="../index.html#uebermich">Über mich</a></li>
+                </ul>
+                <div class="rechts">
+                    <ul>
+                        <li><a href="../html/impressum.html">Impressum</a></li>
+                        <li><a href="../html/datenschutz.html">Datenschutz</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="Copyright">&copy; 2025 Rami Kuteish. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+    <div id="videoModal" class="video-modal">
+        <div class="video-box">
+            <button class="modal-close">&times;</button>
+            <video id="projectVideo" controls>
+                <source src="" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div id="imgModal" class="img-modal">
+        <div class="img-box">
+            <button class="modal-close2">&times;</button>
+            <img id="projectImg" src="" alt="Projektbild">
+            <div class="img-navigation">
+                <button id="prevImg">‹</button>
+                <button id="nextImg">›</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/89b2f7c374.js" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
