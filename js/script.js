@@ -143,7 +143,6 @@ document.getElementById("nextImg").addEventListener("click", () => {
 
     img.src = currentImages[currentIndex];
 
-    console.log(currentImages[currentIndex]);
 });
 
 document.getElementById("prevImg").addEventListener("click", () => {
