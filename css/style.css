@@ -555,7 +555,6 @@ section#projekte hr {
   height: 450px;
 }
 
-
 /* ===== TABLET ===== */
 .tablet-container {
   display: none;
@@ -1718,6 +1717,7 @@ footer .Copyright {
 
   section#projekte .project-info {
     width: 100%;
+    padding: 1rem;
   }
 
   .project-info .project-info-box p {
@@ -1737,6 +1737,7 @@ footer .Copyright {
 
   .projekts_left {
     grid-row: 1 / 2;
+    padding: 0;
   }
 
   .projekts_right {
@@ -1885,6 +1886,18 @@ footer .Copyright {
   footer .Copyright {
     font-size: 0.9rem;
     margin-top: 1.4rem;
+  }
+
+
+  /* POP */
+  .img-box img {
+    height: auto;
+  }
+
+
+  /* Projects Seiten*/
+  .project-img {
+    height: 150px;
   }
 
 
