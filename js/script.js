@@ -1,5 +1,22 @@
 /* jshint esversion: 6 */
 
+// Check if the extension API is available before using it
+if (typeof chrome !== 'undefined' && chrome.runtime && chrome.runtime.onMessage) {
+ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  fetch("/api/data")
+    .then(res => res.json())
+    .then(data => {
+      sendResponse({ ok: true, data });
+    })
+    .catch(error => {
+      sendResponse({ ok: false, error: error.message });
+    });
+
+  return true;
+});
+}
+
+
 /////////////////////////////////////////////////// Circle Follow The Cursor
 const circleElement = document.querySelector('.circle');
 
