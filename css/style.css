@@ -240,11 +240,10 @@ a {
 
 .navbar a {
   position: relative;
-  color: var(--text);
-  text-decoration: none;
-  font-size: calc(1.3rem - 0.1vw);
   font-weight: 500;
-  margin: 1rem 0 0 2rem;
+  margin: 1rem;
+      font-size: 1rem;
+    padding: 1rem;
 }
 
 .navbar a::after {
@@ -1587,23 +1586,20 @@ footer .Copyright {
   .navbar {
     position: fixed;
     left: -100%;
-    top: 70px;
+    top: 90px;
     flex-direction: column;
     background: var(--zweite_hintergrund);
     width: 100%;
     text-align: center;
     transition: 0.3s;
     backdrop-filter: blur(10px);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
   }
 
   .navbar.active {
     left: 0;
     display: flex;
-    padding: 1rem;
-  }
-
-  .navbar.active a {
-    font-size: 1rem;
     padding: 1rem;
   }
 
@@ -1640,7 +1636,7 @@ footer .Copyright {
   }
 
   .home .container {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 5rem;
   }
 
@@ -1662,7 +1658,7 @@ footer .Copyright {
     font-size: 1rem;
   }
 
-  .home_content .home_icons {
+  .home_icons {
     flex-direction: column;
     align-items: baseline;
   }
@@ -1690,71 +1686,78 @@ footer .Copyright {
     align-items: start;
   }
 
-  .projects-header div p br {
-    display: none;
-  }
-
-  section#projekte .project-info {
-    width: 100%;
-    padding: 1rem;
-  }
-
-  .project-info .project-info-box p {
-    padding: 0;
-  }
-
   .projects-main {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
+        justify-self: center;
+    width: 250px;
   }
 
   .projects-main article:nth-of-type(1) {
-    grid-row: 1 /2;
     grid-template-columns: 1fr;
+    grid-row: 1 /2;
     grid-template-rows: repeat(3, 1fr);
   }
 
   .projekts_left {
     grid-row: 1 / 2;
     padding: 0;
+    width: 260px;
+  }
+
+    section#projekte .project-info {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  section#projekte .project-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-info .project-info-box p {
+    padding: 0;
   }
 
   .projekts_right {
-    grid-row: 2 / 4;
     grid-column: 1 / -1;
+    grid-row: 2 / 4;
     border-radius: 0 0 2rem 2rem;
     background: linear-gradient(rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.5)), url(../img/WeProtect\ Berlin-Mobile.jpg) no-repeat center;
-    background-size: cover;
+    background-size: contain;
     padding: 0;
     margin: 0;
+    width: 260px;
   }
 
   .projects-main article:nth-of-type(2) {
+    grid-template-columns: 1fr;
     grid-row: 2 /3;
     grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: 1fr;
   }
 
   .project1 {
     grid-row: 1 / 2;
     grid-column: 1 / -1;
+    background-size: contain;
   }
 
   .project2 {
     grid-row: 2 / 3;
     grid-column: 1 / -1;
+    background-size: contain;
   }
 
   .project3 {
     grid-row: 3 / 4;
     grid-column: 1 / -1;
+    background-size: contain;
   }
 
   .project4 {
     grid-row: 4 / 5;
     grid-column: 1 / -1;
-
+    background-size: contain;
   }
 
   .device-container {
@@ -1777,9 +1780,9 @@ footer .Copyright {
     margin: 0 auto;
   }
 
-  .phone-container .screen {
-    height: 800px;
+   .phone-container .screen {
     position: relative;
+    height: 800px;
   }
 
   /* Über Mich Section */
@@ -1803,13 +1806,13 @@ footer .Copyright {
   }
 
   section.uebermich .container article:nth-of-type(2) div {
-    width: 350px;
+    width: 260px !important;
     max-height: 200px;
   }
 
   section.uebermich .container article:nth-of-type(2) div>div {
-    width: 300px;
-    max-height: 130px;
+    width: 260px;
+    max-height: 150px;
   }
 
 
@@ -1890,6 +1893,6 @@ footer .Copyright {
 
   .impressum_main h1,
   .datenschutz_main h1 {
-    font-size: calc(2rem - 1vw);
+    font-size: calc(1.8rem - 1vw);
   }
 }
