@@ -508,7 +508,7 @@ section#projekte hr {
 .projekts_right {
   grid-column: 2 / 4;
   background: linear-gradient(rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.5)), url(../img/WeProtect\ Berlin.jpg) no-repeat;
+      rgba(0, 0, 0, 0.5)), url(../img/Website-in-Entwicklung.jpg) no-repeat center;
   padding: 0;
   margin: 0;
   background-size: cover;
@@ -1447,12 +1447,6 @@ footer .Copyright {
     margin: 0 auto;
   }
 
-  .projekts_right {
-    background: linear-gradient(rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.5)), url(../img/WeProtect\ Berlin-Tablet.jpg) no-repeat;
-    background-size: cover;
-  }
-
   /* Über Mich Section */
   section.uebermich .container {
     gap: 2.5rem;
@@ -1722,8 +1716,6 @@ footer .Copyright {
     grid-column: 1 / -1;
     grid-row: 2 / 4;
     border-radius: 0 0 2rem 2rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.5)), url(../img/WeProtect\ Berlin-Mobile.jpg) no-repeat center;
     background-size: contain;
     padding: 0;
     margin: 0;
