@@ -1061,7 +1061,6 @@ footer .Copyright {
 .project-card2 {
   position: relative;
   display: grid;
-  grid-template-columns: 320px 1fr 70px;
   align-items: center;
   gap: 2rem;
   padding: 1rem;
@@ -1663,13 +1662,13 @@ footer .Copyright {
     gap: 0.5rem;
   }
 
+.home_icons article {
+  width: 100%;
+}
   .home_content article p {
     text-align: left;
   }
 
-  .home_icons hr {
-    display: none;
-  }
 
 
   /* Projekte */
@@ -1684,19 +1683,22 @@ footer .Copyright {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
         justify-self: center;
-    width: 250px;
+    width: 100%;
   }
 
   .projects-main article:nth-of-type(1) {
     grid-template-columns: 1fr;
     grid-row: 1 /2;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0;
+    margin: 0;
+    height: 90vh;
   }
 
   .projekts_left {
     grid-row: 1 / 2;
     padding: 0;
-    width: 260px;
+    height: auto;
   }
 
     section#projekte .project-info {
@@ -1714,12 +1716,12 @@ footer .Copyright {
 
   .projekts_right {
     grid-column: 1 / -1;
-    grid-row: 2 / 4;
+    grid-row: 2 / -1;
     border-radius: 0 0 2rem 2rem;
-    background-size: contain;
+    background-size: cover;
     padding: 0;
     margin: 0;
-    width: 260px;
+    height: 35vh;
   }
 
   .projects-main article:nth-of-type(2) {
@@ -1731,25 +1733,19 @@ footer .Copyright {
   .project1 {
     grid-row: 1 / 2;
     grid-column: 1 / -1;
-    background-size: contain;
+    background-size: cover;
   }
 
   .project2 {
     grid-row: 2 / 3;
     grid-column: 1 / -1;
-    background-size: contain;
+    background-size: cover;
   }
 
   .project3 {
     grid-row: 3 / 4;
     grid-column: 1 / -1;
-    background-size: contain;
-  }
-
-  .project4 {
-    grid-row: 4 / 5;
-    grid-column: 1 / -1;
-    background-size: contain;
+    background-size: cover;
   }
 
   .device-container {
@@ -1870,8 +1866,13 @@ footer .Copyright {
 
 
   /* Projects Seiten*/
+
   .project-img {
-    height: 150px;
+    height: auto;
+  }
+
+  .project-text {
+    padding: 1rem;
   }
 
 
